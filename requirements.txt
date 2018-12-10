@@ -1,0 +1,11 @@
+python-speech-features
+numpy
+scipy
+sklearn
+wave
+matplotlib
+pyyaml
+pandas
+torch
+torchvision
+tqdm

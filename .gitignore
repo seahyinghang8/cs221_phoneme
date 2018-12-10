@@ -1,3 +1,8 @@
+# datasets and extracted features
+/data
+/timit
+/*-features-plot
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

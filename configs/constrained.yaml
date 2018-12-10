@@ -1,0 +1,14 @@
+phn_idx_map_filename: phn_index_map_constrained.yaml
+
+model_arch: cnn_2_layer
+data_type: logfbank_40
+
+epochs: 30
+dropout: 0.1703
+l2_regularizer: 0.00000017
+learning_rate: 0.008
+batch_size: 20
+val_split: 0.15
+
+num_workers: 4
+num_frames: 10

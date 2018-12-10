@@ -1,0 +1,25 @@
+phn_idx_map_filename: phn_index_map_constrained.yaml
+
+num_sweeps: 30
+
+model_arch: cnn_2_layer
+data_type: logfbank_40-delta
+
+epochs: 15
+dropout:
+  scale: linear
+  min: 0.
+  max: 0.4
+l2_regularizer:
+  scale: exponential
+  min: 0.0000001
+  max: 0.001
+learning_rate:
+  scale: exponential
+  min: 0.000001
+  max: 0.01
+batch_size: 20
+val_split: 0.15
+
+num_workers: 4
+num_frames: 10

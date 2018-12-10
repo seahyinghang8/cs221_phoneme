@@ -1,0 +1,1949 @@
+[2018-12-02 19:22:30,038] Initialized a PhonemeDataset of size 95105.
+[2018-12-02 19:22:56,845] Initialized a PhonemeDataset of size 34959.
+[2018-12-02 19:22:56,962] Cmd: python main.py -c constrained_cnn_5
+[2018-12-02 19:22:56,963] Running experiment <constrained_cnn_5> in train mode.
+[2018-12-02 19:22:56,963] Sweep Count: 0
+[2018-12-02 19:22:56,963] Config:
+ l2_regularizer: 3.94477535531e-05
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.348288639636
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_0
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000976239313656
+ mode: train
+
+[2018-12-02 19:22:57,196] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-02 19:22:57,199] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 19:22:57,199] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-02 19:22:57,200] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 19:22:57,200] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-02 19:22:57,200] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 19:22:57,200] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-02 19:22:57,200] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 19:22:57,200] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-02 19:22:57,200] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 19:22:57,200] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-02 19:22:57,204] Initializing bias Linear.bias with zeros.
+[2018-12-02 19:22:57,204] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-02 19:22:57,215] Initializing bias Linear.bias with zeros.
+[2018-12-02 19:22:57,215] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-02 19:22:57,215] Initializing bias Linear.bias with zeros.
+[2018-12-02 19:22:57,217] Commencing training
+[2018-12-02 19:58:12,429] Epoch: 1	Train Loss: 0.041822	Train PER: 29.99	Val Loss: 0.034987	Val PER: 26.13%
+[2018-12-02 19:58:12,430] Lowest validation error achieved. Saving the model.
+[2018-12-02 20:01:59,821] Epoch: 2	Train Loss: 0.032143	Train PER: 23.37	Val Loss: 0.031011	Val PER: 23.06%
+[2018-12-02 20:01:59,822] Lowest validation error achieved. Saving the model.
+[2018-12-02 20:08:37,582] Epoch: 3	Train Loss: 0.029088	Train PER: 21.40	Val Loss: 0.031475	Val PER: 23.04%
+[2018-12-02 20:08:37,583] Lowest validation error achieved. Saving the model.
+[2018-12-02 20:18:27,695] Epoch: 4	Train Loss: 0.027075	Train PER: 19.92	Val Loss: 0.028771	Val PER: 21.09%
+[2018-12-02 20:18:27,696] Lowest validation error achieved. Saving the model.
+[2018-12-02 20:29:04,094] Epoch: 5	Train Loss: 0.025538	Train PER: 18.96	Val Loss: 0.029056	Val PER: 20.95%
+[2018-12-02 20:29:04,094] Lowest validation error achieved. Saving the model.
+[2018-12-02 20:40:05,595] Epoch: 6	Train Loss: 0.024161	Train PER: 17.98	Val Loss: 0.028524	Val PER: 20.98%
+[2018-12-02 20:51:23,733] Epoch: 7	Train Loss: 0.022842	Train PER: 16.96	Val Loss: 0.029188	Val PER: 21.07%
+[2018-12-02 21:02:49,009] Epoch: 8	Train Loss: 0.021779	Train PER: 16.47	Val Loss: 0.028814	Val PER: 20.76%
+[2018-12-02 21:02:49,011] Lowest validation error achieved. Saving the model.
+[2018-12-02 21:14:17,353] Epoch: 9	Train Loss: 0.020655	Train PER: 15.60	Val Loss: 0.031451	Val PER: 22.00%
+[2018-12-02 21:25:51,380] Epoch: 10	Train Loss: 0.019445	Train PER: 14.72	Val Loss: 0.031606	Val PER: 21.74%
+[2018-12-02 21:37:20,615] Epoch: 11	Train Loss: 0.018343	Train PER: 14.02	Val Loss: 0.031151	Val PER: 20.93%
+[2018-12-02 21:48:34,280] Epoch: 12	Train Loss: 0.017241	Train PER: 13.19	Val Loss: 0.032106	Val PER: 21.25%
+[2018-12-02 21:59:52,948] Epoch: 13	Train Loss: 0.016081	Train PER: 12.44	Val Loss: 0.033384	Val PER: 21.75%
+[2018-12-02 22:10:59,547] Epoch: 14	Train Loss: 0.015172	Train PER: 11.71	Val Loss: 0.034952	Val PER: 21.57%
+[2018-12-02 22:22:06,295] Epoch: 15	Train Loss: 0.014285	Train PER: 11.04	Val Loss: 0.037423	Val PER: 22.28%
+[2018-12-02 22:24:48,130] Test PER: 22.38%
+[2018-12-02 22:24:48,131] Sweep Count: 1
+[2018-12-02 22:24:48,131] Config:
+ l2_regularizer: 7.08639412447e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.0375711292856
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_1
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00592754053149
+ mode: train
+
+[2018-12-02 22:24:48,149] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-02 22:24:48,149] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 22:24:48,149] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-02 22:24:48,150] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 22:24:48,150] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-02 22:24:48,150] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 22:24:48,150] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-02 22:24:48,150] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 22:24:48,150] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-02 22:24:48,150] Initializing bias Conv2d.bias with zeros.
+[2018-12-02 22:24:48,150] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-02 22:24:48,154] Initializing bias Linear.bias with zeros.
+[2018-12-02 22:24:48,154] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-02 22:24:48,166] Initializing bias Linear.bias with zeros.
+[2018-12-02 22:24:48,166] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-02 22:24:48,167] Initializing bias Linear.bias with zeros.
+[2018-12-02 22:24:48,168] Commencing training
+[2018-12-02 22:28:10,397] Epoch: 1	Train Loss: 0.045049	Train PER: 31.78	Val Loss: 0.037626	Val PER: 27.12%
+[2018-12-02 22:28:10,398] Lowest validation error achieved. Saving the model.
+[2018-12-02 22:31:48,455] Epoch: 2	Train Loss: 0.036812	Train PER: 26.29	Val Loss: 0.038286	Val PER: 27.05%
+[2018-12-02 22:31:48,456] Lowest validation error achieved. Saving the model.
+[2018-12-02 22:36:57,767] Epoch: 3	Train Loss: 0.034652	Train PER: 25.00	Val Loss: 0.033803	Val PER: 24.82%
+[2018-12-02 22:36:57,768] Lowest validation error achieved. Saving the model.
+[2018-12-02 22:46:36,371] Epoch: 4	Train Loss: 0.033359	Train PER: 23.86	Val Loss: 0.035687	Val PER: 25.95%
+[2018-12-02 23:00:05,452] Epoch: 5	Train Loss: 0.032718	Train PER: 23.35	Val Loss: 0.035777	Val PER: 25.26%
+[2018-12-02 23:13:18,873] Epoch: 6	Train Loss: 0.031862	Train PER: 22.84	Val Loss: 0.032973	Val PER: 23.95%
+[2018-12-02 23:13:18,874] Lowest validation error achieved. Saving the model.
+[2018-12-02 23:26:29,369] Epoch: 7	Train Loss: 0.031488	Train PER: 22.48	Val Loss: 0.033551	Val PER: 23.50%
+[2018-12-02 23:26:29,370] Lowest validation error achieved. Saving the model.
+[2018-12-02 23:39:59,704] Epoch: 8	Train Loss: 0.030763	Train PER: 21.97	Val Loss: 0.033650	Val PER: 24.15%
+[2018-12-02 23:53:45,732] Epoch: 9	Train Loss: 0.030642	Train PER: 21.99	Val Loss: 0.033849	Val PER: 23.53%
+[2018-12-03 00:07:33,015] Epoch: 10	Train Loss: 0.030150	Train PER: 21.63	Val Loss: 0.032700	Val PER: 23.11%
+[2018-12-03 00:07:33,015] Lowest validation error achieved. Saving the model.
+[2018-12-03 00:21:21,413] Epoch: 11	Train Loss: 0.029696	Train PER: 21.37	Val Loss: 0.032216	Val PER: 22.66%
+[2018-12-03 00:21:21,414] Lowest validation error achieved. Saving the model.
+[2018-12-03 00:35:12,218] Epoch: 12	Train Loss: 0.029300	Train PER: 21.16	Val Loss: 0.034962	Val PER: 24.89%
+[2018-12-03 00:49:38,300] Epoch: 13	Train Loss: 0.029170	Train PER: 20.91	Val Loss: 0.033382	Val PER: 23.51%
+[2018-12-03 01:04:32,549] Epoch: 14	Train Loss: 0.028951	Train PER: 20.74	Val Loss: 0.032424	Val PER: 22.21%
+[2018-12-03 01:04:32,549] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:19:27,382] Epoch: 15	Train Loss: 0.028577	Train PER: 20.42	Val Loss: 0.031656	Val PER: 22.74%
+[2018-12-03 01:20:01,723] Test PER: 22.75%
+[2018-12-03 01:20:01,723] Sweep Count: 2
+[2018-12-03 01:20:01,724] Config:
+ l2_regularizer: 4.85715523841e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.302505525449
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_2
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 1.05700429232e-05
+ mode: train
+
+[2018-12-03 01:20:01,739] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 01:20:01,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 01:20:01,739] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 01:20:01,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 01:20:01,739] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 01:20:01,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 01:20:01,740] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 01:20:01,740] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 01:20:01,740] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 01:20:01,740] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 01:20:01,740] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 01:20:01,743] Initializing bias Linear.bias with zeros.
+[2018-12-03 01:20:01,744] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 01:20:01,755] Initializing bias Linear.bias with zeros.
+[2018-12-03 01:20:01,755] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 01:20:01,755] Initializing bias Linear.bias with zeros.
+[2018-12-03 01:20:01,758] Commencing training
+[2018-12-03 01:22:54,438] Epoch: 1	Train Loss: 0.064087	Train PER: 42.29	Val Loss: 0.050544	Val PER: 35.01%
+[2018-12-03 01:22:54,439] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:25:41,691] Epoch: 2	Train Loss: 0.046974	Train PER: 33.09	Val Loss: 0.044782	Val PER: 31.81%
+[2018-12-03 01:25:41,692] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:28:34,435] Epoch: 3	Train Loss: 0.042964	Train PER: 30.75	Val Loss: 0.042278	Val PER: 30.47%
+[2018-12-03 01:28:34,436] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:31:23,158] Epoch: 4	Train Loss: 0.040679	Train PER: 29.25	Val Loss: 0.040323	Val PER: 29.20%
+[2018-12-03 01:31:23,159] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:34:13,599] Epoch: 5	Train Loss: 0.039022	Train PER: 28.06	Val Loss: 0.039233	Val PER: 28.56%
+[2018-12-03 01:34:13,600] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:37:03,374] Epoch: 6	Train Loss: 0.037810	Train PER: 27.34	Val Loss: 0.038549	Val PER: 28.25%
+[2018-12-03 01:37:03,375] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:39:53,809] Epoch: 7	Train Loss: 0.036708	Train PER: 26.49	Val Loss: 0.037404	Val PER: 27.09%
+[2018-12-03 01:39:53,810] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:42:42,935] Epoch: 8	Train Loss: 0.035870	Train PER: 25.97	Val Loss: 0.036851	Val PER: 26.93%
+[2018-12-03 01:42:42,936] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:45:32,261] Epoch: 9	Train Loss: 0.035084	Train PER: 25.29	Val Loss: 0.036516	Val PER: 26.46%
+[2018-12-03 01:45:32,262] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:48:23,936] Epoch: 10	Train Loss: 0.034420	Train PER: 24.94	Val Loss: 0.036243	Val PER: 26.63%
+[2018-12-03 01:51:18,921] Epoch: 11	Train Loss: 0.033782	Train PER: 24.61	Val Loss: 0.035369	Val PER: 25.91%
+[2018-12-03 01:51:18,922] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:54:08,493] Epoch: 12	Train Loss: 0.033274	Train PER: 24.07	Val Loss: 0.035094	Val PER: 25.63%
+[2018-12-03 01:54:08,494] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:56:54,753] Epoch: 13	Train Loss: 0.032693	Train PER: 23.64	Val Loss: 0.035057	Val PER: 25.41%
+[2018-12-03 01:56:54,754] Lowest validation error achieved. Saving the model.
+[2018-12-03 01:59:45,901] Epoch: 14	Train Loss: 0.032186	Train PER: 23.30	Val Loss: 0.034733	Val PER: 25.47%
+[2018-12-03 02:02:37,951] Epoch: 15	Train Loss: 0.031713	Train PER: 22.97	Val Loss: 0.034072	Val PER: 24.92%
+[2018-12-03 02:02:37,952] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:02:58,536] Test PER: 24.96%
+[2018-12-03 02:02:58,538] Sweep Count: 3
+[2018-12-03 02:02:58,538] Config:
+ l2_regularizer: 6.83441687405e-05
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.382446799762
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_3
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 6.27861904622e-05
+ mode: train
+
+[2018-12-03 02:02:58,557] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 02:02:58,557] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:02:58,557] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 02:02:58,557] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:02:58,557] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 02:02:58,557] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:02:58,557] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 02:02:58,557] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:02:58,557] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 02:02:58,558] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:02:58,558] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 02:02:58,561] Initializing bias Linear.bias with zeros.
+[2018-12-03 02:02:58,561] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 02:02:58,572] Initializing bias Linear.bias with zeros.
+[2018-12-03 02:02:58,572] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 02:02:58,573] Initializing bias Linear.bias with zeros.
+[2018-12-03 02:02:58,574] Commencing training
+[2018-12-03 02:05:30,771] Epoch: 1	Train Loss: 0.047757	Train PER: 33.04	Val Loss: 0.041952	Val PER: 29.95%
+[2018-12-03 02:05:30,772] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:08:10,027] Epoch: 2	Train Loss: 0.037572	Train PER: 26.90	Val Loss: 0.038104	Val PER: 27.49%
+[2018-12-03 02:08:10,028] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:10:48,147] Epoch: 3	Train Loss: 0.034134	Train PER: 24.83	Val Loss: 0.035394	Val PER: 25.68%
+[2018-12-03 02:10:48,148] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:13:22,875] Epoch: 4	Train Loss: 0.031746	Train PER: 23.08	Val Loss: 0.034673	Val PER: 25.90%
+[2018-12-03 02:15:55,133] Epoch: 5	Train Loss: 0.029872	Train PER: 21.76	Val Loss: 0.033285	Val PER: 24.33%
+[2018-12-03 02:15:55,134] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:18:29,395] Epoch: 6	Train Loss: 0.028061	Train PER: 20.31	Val Loss: 0.033078	Val PER: 24.30%
+[2018-12-03 02:18:29,396] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:21:04,597] Epoch: 7	Train Loss: 0.026498	Train PER: 19.34	Val Loss: 0.032332	Val PER: 23.75%
+[2018-12-03 02:21:04,598] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:23:38,861] Epoch: 8	Train Loss: 0.024953	Train PER: 18.16	Val Loss: 0.031886	Val PER: 23.32%
+[2018-12-03 02:23:38,861] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:26:14,007] Epoch: 9	Train Loss: 0.023398	Train PER: 17.06	Val Loss: 0.032908	Val PER: 24.30%
+[2018-12-03 02:28:50,263] Epoch: 10	Train Loss: 0.021924	Train PER: 16.07	Val Loss: 0.033304	Val PER: 23.83%
+[2018-12-03 02:31:25,066] Epoch: 11	Train Loss: 0.020301	Train PER: 14.84	Val Loss: 0.033475	Val PER: 23.57%
+[2018-12-03 02:34:00,921] Epoch: 12	Train Loss: 0.018784	Train PER: 13.62	Val Loss: 0.033573	Val PER: 23.89%
+[2018-12-03 02:36:35,423] Epoch: 13	Train Loss: 0.017237	Train PER: 12.55	Val Loss: 0.035536	Val PER: 24.01%
+[2018-12-03 02:39:09,885] Epoch: 14	Train Loss: 0.015642	Train PER: 11.20	Val Loss: 0.036878	Val PER: 24.57%
+[2018-12-03 02:41:44,279] Epoch: 15	Train Loss: 0.014186	Train PER: 10.09	Val Loss: 0.037423	Val PER: 24.02%
+[2018-12-03 02:42:05,410] Test PER: 24.53%
+[2018-12-03 02:42:05,411] Sweep Count: 4
+[2018-12-03 02:42:05,411] Config:
+ l2_regularizer: 1.59004673564e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.295059496707
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_4
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 1.59699259193e-06
+ mode: train
+
+[2018-12-03 02:42:05,425] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 02:42:05,425] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:42:05,425] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 02:42:05,425] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:42:05,425] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 02:42:05,426] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:42:05,426] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 02:42:05,426] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:42:05,426] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 02:42:05,426] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 02:42:05,426] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 02:42:05,430] Initializing bias Linear.bias with zeros.
+[2018-12-03 02:42:05,430] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 02:42:05,440] Initializing bias Linear.bias with zeros.
+[2018-12-03 02:42:05,441] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 02:42:05,441] Initializing bias Linear.bias with zeros.
+[2018-12-03 02:42:05,443] Commencing training
+[2018-12-03 02:44:57,325] Epoch: 1	Train Loss: 0.102272	Train PER: 61.39	Val Loss: 0.080064	Val PER: 48.50%
+[2018-12-03 02:44:57,325] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:47:47,949] Epoch: 2	Train Loss: 0.069806	Train PER: 44.10	Val Loss: 0.062250	Val PER: 40.39%
+[2018-12-03 02:47:47,950] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:50:43,288] Epoch: 3	Train Loss: 0.058822	Train PER: 39.13	Val Loss: 0.055520	Val PER: 37.08%
+[2018-12-03 02:50:43,288] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:53:34,171] Epoch: 4	Train Loss: 0.053894	Train PER: 36.93	Val Loss: 0.051952	Val PER: 35.59%
+[2018-12-03 02:53:34,171] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:56:26,165] Epoch: 5	Train Loss: 0.051131	Train PER: 35.64	Val Loss: 0.049886	Val PER: 34.83%
+[2018-12-03 02:56:26,165] Lowest validation error achieved. Saving the model.
+[2018-12-03 02:59:15,944] Epoch: 6	Train Loss: 0.049263	Train PER: 34.57	Val Loss: 0.048324	Val PER: 33.89%
+[2018-12-03 02:59:15,945] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:02:07,387] Epoch: 7	Train Loss: 0.047870	Train PER: 33.85	Val Loss: 0.047350	Val PER: 33.18%
+[2018-12-03 03:02:07,387] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:04:59,398] Epoch: 8	Train Loss: 0.046805	Train PER: 33.12	Val Loss: 0.046436	Val PER: 32.85%
+[2018-12-03 03:04:59,398] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:07:49,827] Epoch: 9	Train Loss: 0.045930	Train PER: 32.52	Val Loss: 0.045442	Val PER: 32.28%
+[2018-12-03 03:07:49,827] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:10:41,219] Epoch: 10	Train Loss: 0.045194	Train PER: 32.15	Val Loss: 0.045064	Val PER: 31.86%
+[2018-12-03 03:10:41,220] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:13:31,051] Epoch: 11	Train Loss: 0.044550	Train PER: 31.73	Val Loss: 0.044347	Val PER: 31.45%
+[2018-12-03 03:13:31,052] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:16:23,553] Epoch: 12	Train Loss: 0.044003	Train PER: 31.37	Val Loss: 0.043986	Val PER: 31.31%
+[2018-12-03 03:16:23,553] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:19:12,077] Epoch: 13	Train Loss: 0.043385	Train PER: 31.04	Val Loss: 0.043455	Val PER: 31.05%
+[2018-12-03 03:19:12,077] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:22:02,823] Epoch: 14	Train Loss: 0.042986	Train PER: 30.75	Val Loss: 0.042937	Val PER: 30.58%
+[2018-12-03 03:22:02,823] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:24:51,547] Epoch: 15	Train Loss: 0.042568	Train PER: 30.45	Val Loss: 0.042647	Val PER: 30.61%
+[2018-12-03 03:25:12,378] Test PER: 30.65%
+[2018-12-03 03:25:12,378] Sweep Count: 5
+[2018-12-03 03:25:12,379] Config:
+ l2_regularizer: 2.53486488259e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.00903671666882
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_5
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00231807794056
+ mode: train
+
+[2018-12-03 03:25:12,395] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 03:25:12,395] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 03:25:12,395] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 03:25:12,395] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 03:25:12,395] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 03:25:12,395] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 03:25:12,395] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 03:25:12,395] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 03:25:12,396] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 03:25:12,396] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 03:25:12,396] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 03:25:12,399] Initializing bias Linear.bias with zeros.
+[2018-12-03 03:25:12,399] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 03:25:12,410] Initializing bias Linear.bias with zeros.
+[2018-12-03 03:25:12,410] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 03:25:12,411] Initializing bias Linear.bias with zeros.
+[2018-12-03 03:25:12,412] Commencing training
+[2018-12-03 03:28:33,788] Epoch: 1	Train Loss: 0.039825	Train PER: 28.30	Val Loss: 0.033186	Val PER: 24.28%
+[2018-12-03 03:28:33,788] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:32:45,823] Epoch: 2	Train Loss: 0.031918	Train PER: 23.31	Val Loss: 0.031344	Val PER: 23.01%
+[2018-12-03 03:32:45,823] Lowest validation error achieved. Saving the model.
+[2018-12-03 03:39:12,507] Epoch: 3	Train Loss: 0.029282	Train PER: 21.39	Val Loss: 0.032506	Val PER: 24.49%
+[2018-12-03 03:49:32,090] Epoch: 4	Train Loss: 0.027658	Train PER: 20.41	Val Loss: 0.029861	Val PER: 21.62%
+[2018-12-03 03:49:32,090] Lowest validation error achieved. Saving the model.
+[2018-12-03 04:01:13,989] Epoch: 5	Train Loss: 0.026130	Train PER: 19.38	Val Loss: 0.029887	Val PER: 21.67%
+[2018-12-03 04:12:29,780] Epoch: 6	Train Loss: 0.024849	Train PER: 18.60	Val Loss: 0.029679	Val PER: 21.42%
+[2018-12-03 04:12:29,781] Lowest validation error achieved. Saving the model.
+[2018-12-03 04:23:36,793] Epoch: 7	Train Loss: 0.023667	Train PER: 17.74	Val Loss: 0.029580	Val PER: 21.05%
+[2018-12-03 04:23:36,794] Lowest validation error achieved. Saving the model.
+[2018-12-03 04:34:56,290] Epoch: 8	Train Loss: 0.022483	Train PER: 16.90	Val Loss: 0.032513	Val PER: 21.10%
+[2018-12-03 04:46:31,933] Epoch: 9	Train Loss: 0.021513	Train PER: 16.37	Val Loss: 0.030918	Val PER: 21.69%
+[2018-12-03 04:57:54,173] Epoch: 10	Train Loss: 0.020558	Train PER: 15.59	Val Loss: 0.031976	Val PER: 21.10%
+[2018-12-03 05:09:14,908] Epoch: 11	Train Loss: 0.019564	Train PER: 14.84	Val Loss: 0.032001	Val PER: 21.69%
+[2018-12-03 05:20:38,494] Epoch: 12	Train Loss: 0.018702	Train PER: 14.31	Val Loss: 0.031631	Val PER: 20.88%
+[2018-12-03 05:20:38,494] Lowest validation error achieved. Saving the model.
+[2018-12-03 05:32:17,548] Epoch: 13	Train Loss: 0.017770	Train PER: 13.57	Val Loss: 0.034871	Val PER: 22.08%
+[2018-12-03 05:44:06,027] Epoch: 14	Train Loss: 0.016876	Train PER: 12.85	Val Loss: 0.036552	Val PER: 21.75%
+[2018-12-03 05:55:55,959] Epoch: 15	Train Loss: 0.016248	Train PER: 12.41	Val Loss: 0.036301	Val PER: 21.41%
+[2018-12-03 05:56:35,410] Test PER: 21.02%
+[2018-12-03 05:56:35,411] Sweep Count: 6
+[2018-12-03 05:56:35,411] Config:
+ l2_regularizer: 4.17252121199e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.389362297315
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_6
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00646557902522
+ mode: train
+
+[2018-12-03 05:56:35,425] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 05:56:35,425] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 05:56:35,425] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 05:56:35,425] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 05:56:35,425] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 05:56:35,426] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 05:56:35,426] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 05:56:35,426] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 05:56:35,426] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 05:56:35,426] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 05:56:35,426] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 05:56:35,429] Initializing bias Linear.bias with zeros.
+[2018-12-03 05:56:35,430] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 05:56:35,441] Initializing bias Linear.bias with zeros.
+[2018-12-03 05:56:35,441] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 05:56:35,441] Initializing bias Linear.bias with zeros.
+[2018-12-03 05:56:35,443] Commencing training
+[2018-12-03 06:00:04,608] Epoch: 1	Train Loss: 0.045933	Train PER: 32.22	Val Loss: 0.038156	Val PER: 27.81%
+[2018-12-03 06:00:04,608] Lowest validation error achieved. Saving the model.
+[2018-12-03 06:04:10,704] Epoch: 2	Train Loss: 0.037711	Train PER: 26.95	Val Loss: 0.037443	Val PER: 27.14%
+[2018-12-03 06:04:10,704] Lowest validation error achieved. Saving the model.
+[2018-12-03 06:09:35,554] Epoch: 3	Train Loss: 0.035621	Train PER: 25.46	Val Loss: 0.034486	Val PER: 24.74%
+[2018-12-03 06:09:35,554] Lowest validation error achieved. Saving the model.
+[2018-12-03 06:18:51,734] Epoch: 4	Train Loss: 0.034536	Train PER: 24.66	Val Loss: 0.035662	Val PER: 25.87%
+[2018-12-03 06:32:10,514] Epoch: 5	Train Loss: 0.033678	Train PER: 24.00	Val Loss: 0.034100	Val PER: 24.94%
+[2018-12-03 06:45:21,758] Epoch: 6	Train Loss: 0.033203	Train PER: 23.60	Val Loss: 0.032197	Val PER: 23.32%
+[2018-12-03 06:45:21,759] Lowest validation error achieved. Saving the model.
+[2018-12-03 06:58:20,060] Epoch: 7	Train Loss: 0.032678	Train PER: 23.35	Val Loss: 0.034191	Val PER: 24.63%
+[2018-12-03 07:11:35,381] Epoch: 8	Train Loss: 0.032279	Train PER: 23.02	Val Loss: 0.036142	Val PER: 25.76%
+[2018-12-03 07:25:10,509] Epoch: 9	Train Loss: 0.031599	Train PER: 22.55	Val Loss: 0.032081	Val PER: 23.18%
+[2018-12-03 07:25:10,510] Lowest validation error achieved. Saving the model.
+[2018-12-03 07:38:56,946] Epoch: 10	Train Loss: 0.031427	Train PER: 22.36	Val Loss: 0.048345	Val PER: 23.37%
+[2018-12-03 07:52:47,545] Epoch: 11	Train Loss: 0.031019	Train PER: 22.10	Val Loss: 0.032807	Val PER: 23.45%
+[2018-12-03 08:06:44,827] Epoch: 12	Train Loss: 0.030569	Train PER: 21.81	Val Loss: 0.033633	Val PER: 24.55%
+[2018-12-03 08:21:16,944] Epoch: 13	Train Loss: 0.030488	Train PER: 21.88	Val Loss: 0.031689	Val PER: 22.49%
+[2018-12-03 08:21:16,945] Lowest validation error achieved. Saving the model.
+[2018-12-03 08:36:07,401] Epoch: 14	Train Loss: 0.030074	Train PER: 21.45	Val Loss: 0.034226	Val PER: 24.42%
+[2018-12-03 08:51:05,489] Epoch: 15	Train Loss: 0.029903	Train PER: 21.38	Val Loss: 0.034406	Val PER: 24.63%
+[2018-12-03 08:51:33,850] Test PER: 24.21%
+[2018-12-03 08:51:33,850] Sweep Count: 7
+[2018-12-03 08:51:33,851] Config:
+ l2_regularizer: 2.08331881124e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.35651855675
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_7
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 1.70127836367e-06
+ mode: train
+
+[2018-12-03 08:51:33,864] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 08:51:33,865] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 08:51:33,865] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 08:51:33,865] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 08:51:33,865] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 08:51:33,865] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 08:51:33,865] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 08:51:33,865] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 08:51:33,865] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 08:51:33,865] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 08:51:33,865] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 08:51:33,869] Initializing bias Linear.bias with zeros.
+[2018-12-03 08:51:33,869] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 08:51:33,880] Initializing bias Linear.bias with zeros.
+[2018-12-03 08:51:33,880] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 08:51:33,880] Initializing bias Linear.bias with zeros.
+[2018-12-03 08:51:33,883] Commencing training
+[2018-12-03 08:54:06,153] Epoch: 1	Train Loss: 0.102341	Train PER: 62.30	Val Loss: 0.081877	Val PER: 52.18%
+[2018-12-03 08:54:06,154] Lowest validation error achieved. Saving the model.
+[2018-12-03 08:56:38,147] Epoch: 2	Train Loss: 0.073401	Train PER: 47.90	Val Loss: 0.067717	Val PER: 45.18%
+[2018-12-03 08:56:38,148] Lowest validation error achieved. Saving the model.
+[2018-12-03 08:59:08,994] Epoch: 3	Train Loss: 0.064315	Train PER: 43.21	Val Loss: 0.061488	Val PER: 41.52%
+[2018-12-03 08:59:08,994] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:01:40,133] Epoch: 4	Train Loss: 0.059545	Train PER: 40.41	Val Loss: 0.057912	Val PER: 39.68%
+[2018-12-03 09:01:40,134] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:04:12,831] Epoch: 5	Train Loss: 0.056474	Train PER: 38.69	Val Loss: 0.055286	Val PER: 38.03%
+[2018-12-03 09:04:12,832] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:06:45,135] Epoch: 6	Train Loss: 0.054194	Train PER: 37.28	Val Loss: 0.053602	Val PER: 37.19%
+[2018-12-03 09:06:45,135] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:09:18,995] Epoch: 7	Train Loss: 0.052436	Train PER: 36.34	Val Loss: 0.052025	Val PER: 36.20%
+[2018-12-03 09:09:18,996] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:11:51,344] Epoch: 8	Train Loss: 0.050976	Train PER: 35.32	Val Loss: 0.050734	Val PER: 35.61%
+[2018-12-03 09:11:51,345] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:14:24,845] Epoch: 9	Train Loss: 0.049764	Train PER: 34.54	Val Loss: 0.049806	Val PER: 34.99%
+[2018-12-03 09:14:24,845] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:16:55,640] Epoch: 10	Train Loss: 0.048725	Train PER: 33.95	Val Loss: 0.048891	Val PER: 33.95%
+[2018-12-03 09:16:55,640] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:19:28,803] Epoch: 11	Train Loss: 0.047794	Train PER: 33.27	Val Loss: 0.048078	Val PER: 33.42%
+[2018-12-03 09:19:28,803] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:21:58,997] Epoch: 12	Train Loss: 0.047014	Train PER: 32.87	Val Loss: 0.047469	Val PER: 33.30%
+[2018-12-03 09:21:58,997] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:24:32,704] Epoch: 13	Train Loss: 0.046287	Train PER: 32.44	Val Loss: 0.046830	Val PER: 32.84%
+[2018-12-03 09:24:32,704] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:27:04,031] Epoch: 14	Train Loss: 0.045642	Train PER: 31.99	Val Loss: 0.046317	Val PER: 32.53%
+[2018-12-03 09:27:04,032] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:29:37,944] Epoch: 15	Train Loss: 0.045042	Train PER: 31.71	Val Loss: 0.045751	Val PER: 32.16%
+[2018-12-03 09:29:37,944] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:29:59,495] Test PER: 32.78%
+[2018-12-03 09:29:59,496] Sweep Count: 8
+[2018-12-03 09:29:59,496] Config:
+ l2_regularizer: 9.65173706875e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.311498733406
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_8
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 3.50879516943e-06
+ mode: train
+
+[2018-12-03 09:29:59,509] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 09:29:59,510] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 09:29:59,510] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 09:29:59,510] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 09:29:59,510] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 09:29:59,510] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 09:29:59,510] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 09:29:59,511] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 09:29:59,511] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 09:29:59,511] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 09:29:59,511] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 09:29:59,514] Initializing bias Linear.bias with zeros.
+[2018-12-03 09:29:59,515] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 09:29:59,525] Initializing bias Linear.bias with zeros.
+[2018-12-03 09:29:59,525] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 09:29:59,526] Initializing bias Linear.bias with zeros.
+[2018-12-03 09:29:59,528] Commencing training
+[2018-12-03 09:32:33,620] Epoch: 1	Train Loss: 0.083406	Train PER: 51.36	Val Loss: 0.062496	Val PER: 41.02%
+[2018-12-03 09:32:33,621] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:35:07,397] Epoch: 2	Train Loss: 0.056502	Train PER: 37.83	Val Loss: 0.052916	Val PER: 36.30%
+[2018-12-03 09:35:07,397] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:37:41,158] Epoch: 3	Train Loss: 0.050033	Train PER: 34.42	Val Loss: 0.048390	Val PER: 33.96%
+[2018-12-03 09:37:41,159] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:40:14,149] Epoch: 4	Train Loss: 0.046749	Train PER: 32.75	Val Loss: 0.046173	Val PER: 32.58%
+[2018-12-03 09:40:14,149] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:42:46,801] Epoch: 5	Train Loss: 0.044555	Train PER: 31.44	Val Loss: 0.044555	Val PER: 31.32%
+[2018-12-03 09:42:46,802] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:45:19,762] Epoch: 6	Train Loss: 0.043040	Train PER: 30.53	Val Loss: 0.043380	Val PER: 30.53%
+[2018-12-03 09:45:19,762] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:47:52,775] Epoch: 7	Train Loss: 0.041826	Train PER: 29.82	Val Loss: 0.042340	Val PER: 29.84%
+[2018-12-03 09:47:52,776] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:50:26,388] Epoch: 8	Train Loss: 0.040814	Train PER: 29.13	Val Loss: 0.041510	Val PER: 29.34%
+[2018-12-03 09:50:26,389] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:52:59,989] Epoch: 9	Train Loss: 0.039855	Train PER: 28.45	Val Loss: 0.040826	Val PER: 29.09%
+[2018-12-03 09:52:59,990] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:55:32,497] Epoch: 10	Train Loss: 0.039137	Train PER: 28.03	Val Loss: 0.040247	Val PER: 28.78%
+[2018-12-03 09:55:32,499] Lowest validation error achieved. Saving the model.
+[2018-12-03 09:58:05,897] Epoch: 11	Train Loss: 0.038494	Train PER: 27.56	Val Loss: 0.039571	Val PER: 28.43%
+[2018-12-03 09:58:05,897] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:00:39,050] Epoch: 12	Train Loss: 0.037851	Train PER: 27.16	Val Loss: 0.039079	Val PER: 27.86%
+[2018-12-03 10:00:39,051] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:03:13,096] Epoch: 13	Train Loss: 0.037292	Train PER: 26.90	Val Loss: 0.038780	Val PER: 27.87%
+[2018-12-03 10:05:47,411] Epoch: 14	Train Loss: 0.036766	Train PER: 26.47	Val Loss: 0.038349	Val PER: 27.75%
+[2018-12-03 10:05:47,412] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:08:21,163] Epoch: 15	Train Loss: 0.036336	Train PER: 26.23	Val Loss: 0.038023	Val PER: 27.33%
+[2018-12-03 10:08:21,163] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:08:41,805] Test PER: 27.26%
+[2018-12-03 10:08:41,806] Sweep Count: 9
+[2018-12-03 10:08:41,806] Config:
+ l2_regularizer: 0.000268062174535
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.241420403053
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_9
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 6.16331177516e-05
+ mode: train
+
+[2018-12-03 10:08:41,820] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 10:08:41,820] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:08:41,820] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 10:08:41,820] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:08:41,820] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 10:08:41,820] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:08:41,821] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 10:08:41,821] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:08:41,821] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 10:08:41,821] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:08:41,821] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 10:08:41,825] Initializing bias Linear.bias with zeros.
+[2018-12-03 10:08:41,826] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 10:08:41,837] Initializing bias Linear.bias with zeros.
+[2018-12-03 10:08:41,837] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 10:08:41,837] Initializing bias Linear.bias with zeros.
+[2018-12-03 10:08:41,839] Commencing training
+[2018-12-03 10:11:15,593] Epoch: 1	Train Loss: 0.049199	Train PER: 34.09	Val Loss: 0.041229	Val PER: 30.23%
+[2018-12-03 10:11:15,594] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:13:47,904] Epoch: 2	Train Loss: 0.037517	Train PER: 27.18	Val Loss: 0.036104	Val PER: 26.23%
+[2018-12-03 10:13:47,904] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:16:22,192] Epoch: 3	Train Loss: 0.033919	Train PER: 24.67	Val Loss: 0.034494	Val PER: 25.45%
+[2018-12-03 10:16:22,192] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:18:56,293] Epoch: 4	Train Loss: 0.031614	Train PER: 23.25	Val Loss: 0.033309	Val PER: 24.47%
+[2018-12-03 10:18:56,294] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:21:36,981] Epoch: 5	Train Loss: 0.029833	Train PER: 21.91	Val Loss: 0.032466	Val PER: 23.93%
+[2018-12-03 10:21:36,982] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:24:25,347] Epoch: 6	Train Loss: 0.028409	Train PER: 20.92	Val Loss: 0.032331	Val PER: 23.81%
+[2018-12-03 10:24:25,348] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:27:14,941] Epoch: 7	Train Loss: 0.027033	Train PER: 19.97	Val Loss: 0.032545	Val PER: 24.04%
+[2018-12-03 10:30:06,865] Epoch: 8	Train Loss: 0.025748	Train PER: 19.06	Val Loss: 0.031365	Val PER: 23.12%
+[2018-12-03 10:30:06,866] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:32:55,138] Epoch: 9	Train Loss: 0.024502	Train PER: 18.12	Val Loss: 0.032526	Val PER: 23.68%
+[2018-12-03 10:35:46,736] Epoch: 10	Train Loss: 0.023335	Train PER: 17.30	Val Loss: 0.031454	Val PER: 23.27%
+[2018-12-03 10:38:42,359] Epoch: 11	Train Loss: 0.022194	Train PER: 16.37	Val Loss: 0.031514	Val PER: 23.17%
+[2018-12-03 10:41:33,964] Epoch: 12	Train Loss: 0.020916	Train PER: 15.45	Val Loss: 0.031642	Val PER: 23.00%
+[2018-12-03 10:41:33,965] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:44:21,779] Epoch: 13	Train Loss: 0.019638	Train PER: 14.44	Val Loss: 0.031822	Val PER: 22.82%
+[2018-12-03 10:44:21,780] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:47:11,711] Epoch: 14	Train Loss: 0.018329	Train PER: 13.48	Val Loss: 0.032695	Val PER: 23.27%
+[2018-12-03 10:49:59,565] Epoch: 15	Train Loss: 0.017095	Train PER: 12.60	Val Loss: 0.033834	Val PER: 23.62%
+[2018-12-03 10:50:22,514] Test PER: 22.91%
+[2018-12-03 10:50:22,514] Sweep Count: 10
+[2018-12-03 10:50:22,515] Config:
+ l2_regularizer: 0.000781796926505
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.0285668099314
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_10
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00063887081148
+ mode: train
+
+[2018-12-03 10:50:22,528] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 10:50:22,529] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:50:22,529] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 10:50:22,529] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:50:22,529] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 10:50:22,529] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:50:22,529] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 10:50:22,529] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:50:22,529] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 10:50:22,529] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 10:50:22,529] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 10:50:22,533] Initializing bias Linear.bias with zeros.
+[2018-12-03 10:50:22,533] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 10:50:22,544] Initializing bias Linear.bias with zeros.
+[2018-12-03 10:50:22,544] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 10:50:22,544] Initializing bias Linear.bias with zeros.
+[2018-12-03 10:50:22,546] Commencing training
+[2018-12-03 10:53:18,064] Epoch: 1	Train Loss: 0.041005	Train PER: 29.64	Val Loss: 0.034625	Val PER: 25.47%
+[2018-12-03 10:53:18,064] Lowest validation error achieved. Saving the model.
+[2018-12-03 10:59:17,189] Epoch: 2	Train Loss: 0.034364	Train PER: 24.87	Val Loss: 0.035702	Val PER: 25.80%
+[2018-12-03 11:09:02,452] Epoch: 3	Train Loss: 0.031781	Train PER: 23.17	Val Loss: 0.031074	Val PER: 23.20%
+[2018-12-03 11:09:02,453] Lowest validation error achieved. Saving the model.
+[2018-12-03 11:20:02,898] Epoch: 4	Train Loss: 0.030325	Train PER: 22.12	Val Loss: 0.030311	Val PER: 22.57%
+[2018-12-03 11:20:02,898] Lowest validation error achieved. Saving the model.
+[2018-12-03 11:31:26,251] Epoch: 5	Train Loss: 0.029250	Train PER: 21.52	Val Loss: 0.029940	Val PER: 22.35%
+[2018-12-03 11:31:26,252] Lowest validation error achieved. Saving the model.
+[2018-12-03 11:42:58,747] Epoch: 6	Train Loss: 0.028338	Train PER: 20.95	Val Loss: 0.029001	Val PER: 21.63%
+[2018-12-03 11:42:58,747] Lowest validation error achieved. Saving the model.
+[2018-12-03 11:53:58,952] Epoch: 7	Train Loss: 0.027665	Train PER: 20.33	Val Loss: 0.029144	Val PER: 21.51%
+[2018-12-03 11:53:58,952] Lowest validation error achieved. Saving the model.
+[2018-12-03 12:04:20,187] Epoch: 8	Train Loss: 0.027192	Train PER: 20.15	Val Loss: 0.030313	Val PER: 22.05%
+[2018-12-03 12:14:28,215] Epoch: 9	Train Loss: 0.026662	Train PER: 19.67	Val Loss: 0.028647	Val PER: 21.28%
+[2018-12-03 12:14:28,215] Lowest validation error achieved. Saving the model.
+[2018-12-03 12:24:28,611] Epoch: 10	Train Loss: 0.026274	Train PER: 19.33	Val Loss: 0.029851	Val PER: 21.84%
+[2018-12-03 12:34:16,645] Epoch: 11	Train Loss: 0.025838	Train PER: 19.00	Val Loss: 0.028826	Val PER: 21.07%
+[2018-12-03 12:34:16,646] Lowest validation error achieved. Saving the model.
+[2018-12-03 12:44:02,875] Epoch: 12	Train Loss: 0.025550	Train PER: 18.83	Val Loss: 0.028405	Val PER: 20.98%
+[2018-12-03 12:44:02,875] Lowest validation error achieved. Saving the model.
+[2018-12-03 12:53:39,911] Epoch: 13	Train Loss: 0.025150	Train PER: 18.68	Val Loss: 0.028143	Val PER: 20.80%
+[2018-12-03 12:53:39,911] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:03:08,696] Epoch: 14	Train Loss: 0.024878	Train PER: 18.36	Val Loss: 0.027801	Val PER: 20.42%
+[2018-12-03 13:03:08,696] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:12:43,422] Epoch: 15	Train Loss: 0.024665	Train PER: 18.22	Val Loss: 0.028713	Val PER: 21.02%
+[2018-12-03 13:13:16,458] Test PER: 20.74%
+[2018-12-03 13:13:16,459] Sweep Count: 11
+[2018-12-03 13:13:16,459] Config:
+ l2_regularizer: 1.14853006586e-05
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.386687444227
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_11
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000230559676215
+ mode: train
+
+[2018-12-03 13:13:16,473] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 13:13:16,473] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:13:16,473] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 13:13:16,474] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:13:16,474] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 13:13:16,474] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:13:16,474] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 13:13:16,474] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:13:16,474] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 13:13:16,474] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:13:16,474] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 13:13:16,478] Initializing bias Linear.bias with zeros.
+[2018-12-03 13:13:16,478] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 13:13:16,488] Initializing bias Linear.bias with zeros.
+[2018-12-03 13:13:16,489] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 13:13:16,489] Initializing bias Linear.bias with zeros.
+[2018-12-03 13:13:16,492] Commencing training
+[2018-12-03 13:15:51,597] Epoch: 1	Train Loss: 0.043529	Train PER: 31.59	Val Loss: 0.036518	Val PER: 27.48%
+[2018-12-03 13:15:51,598] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:18:27,557] Epoch: 2	Train Loss: 0.033834	Train PER: 24.89	Val Loss: 0.033058	Val PER: 24.07%
+[2018-12-03 13:18:27,557] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:21:06,486] Epoch: 3	Train Loss: 0.030413	Train PER: 22.72	Val Loss: 0.031134	Val PER: 23.35%
+[2018-12-03 13:21:06,486] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:23:47,865] Epoch: 4	Train Loss: 0.027852	Train PER: 20.68	Val Loss: 0.030459	Val PER: 22.51%
+[2018-12-03 13:23:47,866] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:26:33,015] Epoch: 5	Train Loss: 0.025531	Train PER: 19.05	Val Loss: 0.029818	Val PER: 22.36%
+[2018-12-03 13:26:33,015] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:29:25,011] Epoch: 6	Train Loss: 0.023275	Train PER: 17.58	Val Loss: 0.030960	Val PER: 22.02%
+[2018-12-03 13:29:25,012] Lowest validation error achieved. Saving the model.
+[2018-12-03 13:32:17,008] Epoch: 7	Train Loss: 0.020918	Train PER: 15.90	Val Loss: 0.031421	Val PER: 22.52%
+[2018-12-03 13:35:07,728] Epoch: 8	Train Loss: 0.018401	Train PER: 14.04	Val Loss: 0.031964	Val PER: 22.50%
+[2018-12-03 13:38:01,276] Epoch: 9	Train Loss: 0.015676	Train PER: 11.97	Val Loss: 0.034447	Val PER: 22.52%
+[2018-12-03 13:40:51,499] Epoch: 10	Train Loss: 0.013098	Train PER: 9.99	Val Loss: 0.037551	Val PER: 23.21%
+[2018-12-03 13:43:46,707] Epoch: 11	Train Loss: 0.010700	Train PER: 8.16	Val Loss: 0.040422	Val PER: 22.96%
+[2018-12-03 13:46:34,097] Epoch: 12	Train Loss: 0.008839	Train PER: 6.76	Val Loss: 0.045020	Val PER: 23.76%
+[2018-12-03 13:49:26,570] Epoch: 13	Train Loss: 0.007563	Train PER: 5.80	Val Loss: 0.048087	Val PER: 23.97%
+[2018-12-03 13:52:16,545] Epoch: 14	Train Loss: 0.006187	Train PER: 4.64	Val Loss: 0.051715	Val PER: 23.40%
+[2018-12-03 13:55:10,993] Epoch: 15	Train Loss: 0.005594	Train PER: 4.23	Val Loss: 0.057406	Val PER: 23.88%
+[2018-12-03 13:55:32,724] Test PER: 24.54%
+[2018-12-03 13:55:32,724] Sweep Count: 12
+[2018-12-03 13:55:32,725] Config:
+ l2_regularizer: 0.000509780510268
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.223681657017
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_12
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 2.57679466418e-05
+ mode: train
+
+[2018-12-03 13:55:32,739] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 13:55:32,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:55:32,739] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 13:55:32,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:55:32,739] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 13:55:32,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:55:32,739] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 13:55:32,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:55:32,739] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 13:55:32,739] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 13:55:32,740] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 13:55:32,743] Initializing bias Linear.bias with zeros.
+[2018-12-03 13:55:32,743] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 13:55:32,754] Initializing bias Linear.bias with zeros.
+[2018-12-03 13:55:32,754] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 13:55:32,755] Initializing bias Linear.bias with zeros.
+[2018-12-03 13:55:32,758] Commencing training
+[2018-12-03 13:58:06,241] Epoch: 1	Train Loss: 0.058659	Train PER: 39.84	Val Loss: 0.045299	Val PER: 31.88%
+[2018-12-03 13:58:06,242] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:00:41,418] Epoch: 2	Train Loss: 0.042391	Train PER: 30.49	Val Loss: 0.040857	Val PER: 29.25%
+[2018-12-03 14:00:41,419] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:03:16,226] Epoch: 3	Train Loss: 0.038803	Train PER: 28.00	Val Loss: 0.038714	Val PER: 27.98%
+[2018-12-03 14:03:16,226] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:05:49,817] Epoch: 4	Train Loss: 0.036694	Train PER: 26.66	Val Loss: 0.037358	Val PER: 27.42%
+[2018-12-03 14:05:49,817] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:08:24,245] Epoch: 5	Train Loss: 0.035155	Train PER: 25.56	Val Loss: 0.036433	Val PER: 26.88%
+[2018-12-03 14:08:24,245] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:11:01,110] Epoch: 6	Train Loss: 0.033908	Train PER: 24.75	Val Loss: 0.035612	Val PER: 26.27%
+[2018-12-03 14:11:01,111] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:13:41,493] Epoch: 7	Train Loss: 0.032827	Train PER: 24.04	Val Loss: 0.035219	Val PER: 26.08%
+[2018-12-03 14:13:41,493] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:16:20,279] Epoch: 8	Train Loss: 0.031950	Train PER: 23.43	Val Loss: 0.034403	Val PER: 25.33%
+[2018-12-03 14:16:20,279] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:19:00,053] Epoch: 9	Train Loss: 0.031110	Train PER: 22.83	Val Loss: 0.034227	Val PER: 25.55%
+[2018-12-03 14:21:38,275] Epoch: 10	Train Loss: 0.030315	Train PER: 22.12	Val Loss: 0.033499	Val PER: 24.64%
+[2018-12-03 14:21:38,276] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:24:19,404] Epoch: 11	Train Loss: 0.029649	Train PER: 21.68	Val Loss: 0.034000	Val PER: 25.12%
+[2018-12-03 14:26:59,126] Epoch: 12	Train Loss: 0.028955	Train PER: 21.12	Val Loss: 0.033304	Val PER: 24.72%
+[2018-12-03 14:29:41,821] Epoch: 13	Train Loss: 0.028333	Train PER: 20.75	Val Loss: 0.033416	Val PER: 24.77%
+[2018-12-03 14:32:18,571] Epoch: 14	Train Loss: 0.027745	Train PER: 20.32	Val Loss: 0.032910	Val PER: 24.58%
+[2018-12-03 14:32:18,572] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:34:59,922] Epoch: 15	Train Loss: 0.027172	Train PER: 19.95	Val Loss: 0.032564	Val PER: 24.35%
+[2018-12-03 14:34:59,923] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:35:22,064] Test PER: 24.39%
+[2018-12-03 14:35:22,065] Sweep Count: 13
+[2018-12-03 14:35:22,065] Config:
+ l2_regularizer: 1.43387006496e-05
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.0495014587919
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_13
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000208497795604
+ mode: train
+
+[2018-12-03 14:35:22,079] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 14:35:22,079] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 14:35:22,079] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 14:35:22,079] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 14:35:22,080] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 14:35:22,080] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 14:35:22,080] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 14:35:22,080] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 14:35:22,080] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 14:35:22,080] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 14:35:22,080] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 14:35:22,084] Initializing bias Linear.bias with zeros.
+[2018-12-03 14:35:22,084] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 14:35:22,094] Initializing bias Linear.bias with zeros.
+[2018-12-03 14:35:22,095] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 14:35:22,095] Initializing bias Linear.bias with zeros.
+[2018-12-03 14:35:22,098] Commencing training
+[2018-12-03 14:37:53,581] Epoch: 1	Train Loss: 0.043215	Train PER: 31.28	Val Loss: 0.036496	Val PER: 27.21%
+[2018-12-03 14:37:53,582] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:40:28,595] Epoch: 2	Train Loss: 0.034070	Train PER: 24.96	Val Loss: 0.034542	Val PER: 25.38%
+[2018-12-03 14:40:28,596] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:43:02,015] Epoch: 3	Train Loss: 0.030426	Train PER: 22.44	Val Loss: 0.032262	Val PER: 24.04%
+[2018-12-03 14:43:02,015] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:45:38,280] Epoch: 4	Train Loss: 0.027721	Train PER: 20.59	Val Loss: 0.031346	Val PER: 23.65%
+[2018-12-03 14:45:38,280] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:48:14,301] Epoch: 5	Train Loss: 0.025125	Train PER: 18.59	Val Loss: 0.031461	Val PER: 22.85%
+[2018-12-03 14:48:14,301] Lowest validation error achieved. Saving the model.
+[2018-12-03 14:50:53,171] Epoch: 6	Train Loss: 0.022508	Train PER: 16.94	Val Loss: 0.032048	Val PER: 23.20%
+[2018-12-03 14:53:33,292] Epoch: 7	Train Loss: 0.019688	Train PER: 14.83	Val Loss: 0.034184	Val PER: 24.07%
+[2018-12-03 14:56:15,221] Epoch: 8	Train Loss: 0.016809	Train PER: 12.69	Val Loss: 0.034879	Val PER: 23.56%
+[2018-12-03 14:58:57,517] Epoch: 9	Train Loss: 0.013876	Train PER: 10.52	Val Loss: 0.037729	Val PER: 23.72%
+[2018-12-03 15:01:38,813] Epoch: 10	Train Loss: 0.011193	Train PER: 8.35	Val Loss: 0.042092	Val PER: 24.11%
+[2018-12-03 15:04:17,836] Epoch: 11	Train Loss: 0.008995	Train PER: 6.77	Val Loss: 0.045005	Val PER: 24.42%
+[2018-12-03 15:06:57,703] Epoch: 12	Train Loss: 0.007350	Train PER: 5.49	Val Loss: 0.049579	Val PER: 24.70%
+[2018-12-03 15:09:39,855] Epoch: 13	Train Loss: 0.006015	Train PER: 4.42	Val Loss: 0.054678	Val PER: 24.56%
+[2018-12-03 15:12:20,029] Epoch: 14	Train Loss: 0.005135	Train PER: 3.71	Val Loss: 0.057744	Val PER: 24.52%
+[2018-12-03 15:15:01,310] Epoch: 15	Train Loss: 0.004494	Train PER: 3.25	Val Loss: 0.062168	Val PER: 25.45%
+[2018-12-03 15:15:22,893] Test PER: 25.06%
+[2018-12-03 15:15:22,894] Sweep Count: 14
+[2018-12-03 15:15:22,894] Config:
+ l2_regularizer: 9.71343050051e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.360727019158
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_14
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00102842280586
+ mode: train
+
+[2018-12-03 15:15:22,908] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 15:15:22,909] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 15:15:22,909] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 15:15:22,909] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 15:15:22,909] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 15:15:22,909] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 15:15:22,909] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 15:15:22,909] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 15:15:22,909] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 15:15:22,909] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 15:15:22,909] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 15:15:22,913] Initializing bias Linear.bias with zeros.
+[2018-12-03 15:15:22,913] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 15:15:22,924] Initializing bias Linear.bias with zeros.
+[2018-12-03 15:15:22,924] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 15:15:22,924] Initializing bias Linear.bias with zeros.
+[2018-12-03 15:15:22,928] Commencing training
+[2018-12-03 15:18:06,936] Epoch: 1	Train Loss: 0.042176	Train PER: 30.14	Val Loss: 0.035020	Val PER: 25.91%
+[2018-12-03 15:18:06,936] Lowest validation error achieved. Saving the model.
+[2018-12-03 15:21:08,423] Epoch: 2	Train Loss: 0.031965	Train PER: 23.31	Val Loss: 0.032259	Val PER: 23.43%
+[2018-12-03 15:21:08,424] Lowest validation error achieved. Saving the model.
+[2018-12-03 15:25:18,725] Epoch: 3	Train Loss: 0.028722	Train PER: 21.08	Val Loss: 0.029296	Val PER: 21.53%
+[2018-12-03 15:25:18,726] Lowest validation error achieved. Saving the model.
+[2018-12-03 15:32:42,255] Epoch: 4	Train Loss: 0.026554	Train PER: 19.80	Val Loss: 0.029197	Val PER: 21.47%
+[2018-12-03 15:32:42,256] Lowest validation error achieved. Saving the model.
+[2018-12-03 15:41:59,017] Epoch: 5	Train Loss: 0.024661	Train PER: 18.52	Val Loss: 0.029648	Val PER: 21.20%
+[2018-12-03 15:41:59,018] Lowest validation error achieved. Saving the model.
+[2018-12-03 15:51:01,609] Epoch: 6	Train Loss: 0.023023	Train PER: 17.30	Val Loss: 0.028635	Val PER: 20.57%
+[2018-12-03 15:51:01,610] Lowest validation error achieved. Saving the model.
+[2018-12-03 15:59:56,971] Epoch: 7	Train Loss: 0.021248	Train PER: 16.05	Val Loss: 0.029503	Val PER: 20.94%
+[2018-12-03 16:08:58,298] Epoch: 8	Train Loss: 0.019611	Train PER: 15.20	Val Loss: 0.030477	Val PER: 21.36%
+[2018-12-03 16:18:13,642] Epoch: 9	Train Loss: 0.017863	Train PER: 13.74	Val Loss: 0.031291	Val PER: 20.78%
+[2018-12-03 16:27:25,472] Epoch: 10	Train Loss: 0.016328	Train PER: 12.55	Val Loss: 0.033174	Val PER: 21.64%
+[2018-12-03 16:36:25,006] Epoch: 11	Train Loss: 0.014849	Train PER: 11.53	Val Loss: 0.035947	Val PER: 21.77%
+[2018-12-03 16:45:10,500] Epoch: 12	Train Loss: 0.013520	Train PER: 10.48	Val Loss: 0.038258	Val PER: 22.37%
+[2018-12-03 16:54:11,536] Epoch: 13	Train Loss: 0.012131	Train PER: 9.29	Val Loss: 0.041102	Val PER: 23.04%
+[2018-12-03 17:03:01,421] Epoch: 14	Train Loss: 0.011098	Train PER: 8.62	Val Loss: 0.041814	Val PER: 22.42%
+[2018-12-03 17:11:50,595] Epoch: 15	Train Loss: 0.010205	Train PER: 7.92	Val Loss: 0.046502	Val PER: 23.19%
+[2018-12-03 17:12:32,132] Test PER: 22.76%
+[2018-12-03 17:12:32,132] Sweep Count: 15
+[2018-12-03 17:12:32,133] Config:
+ l2_regularizer: 3.95191398915e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.038631507334
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_15
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00414554643628
+ mode: train
+
+[2018-12-03 17:12:32,146] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 17:12:32,146] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 17:12:32,147] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 17:12:32,147] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 17:12:32,147] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 17:12:32,147] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 17:12:32,147] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 17:12:32,147] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 17:12:32,147] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 17:12:32,147] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 17:12:32,147] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 17:12:32,151] Initializing bias Linear.bias with zeros.
+[2018-12-03 17:12:32,151] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 17:12:32,161] Initializing bias Linear.bias with zeros.
+[2018-12-03 17:12:32,162] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 17:12:32,162] Initializing bias Linear.bias with zeros.
+[2018-12-03 17:12:32,165] Commencing training
+[2018-12-03 17:15:40,280] Epoch: 1	Train Loss: 0.042998	Train PER: 30.56	Val Loss: 0.036079	Val PER: 25.95%
+[2018-12-03 17:15:40,280] Lowest validation error achieved. Saving the model.
+[2018-12-03 17:19:52,368] Epoch: 2	Train Loss: 0.034460	Train PER: 24.96	Val Loss: 0.034190	Val PER: 25.10%
+[2018-12-03 17:19:52,368] Lowest validation error achieved. Saving the model.
+[2018-12-03 17:27:44,301] Epoch: 3	Train Loss: 0.031977	Train PER: 23.19	Val Loss: 0.032122	Val PER: 23.88%
+[2018-12-03 17:27:44,301] Lowest validation error achieved. Saving the model.
+[2018-12-03 17:40:59,209] Epoch: 4	Train Loss: 0.030434	Train PER: 22.15	Val Loss: 0.032777	Val PER: 23.27%
+[2018-12-03 17:40:59,209] Lowest validation error achieved. Saving the model.
+[2018-12-03 17:54:30,457] Epoch: 5	Train Loss: 0.029514	Train PER: 21.44	Val Loss: 0.030736	Val PER: 22.43%
+[2018-12-03 17:54:30,458] Lowest validation error achieved. Saving the model.
+[2018-12-03 18:07:44,356] Epoch: 6	Train Loss: 0.028458	Train PER: 20.73	Val Loss: 0.030796	Val PER: 22.01%
+[2018-12-03 18:07:44,356] Lowest validation error achieved. Saving the model.
+[2018-12-03 18:21:15,150] Epoch: 7	Train Loss: 0.027956	Train PER: 20.43	Val Loss: 0.030523	Val PER: 22.52%
+[2018-12-03 18:35:13,232] Epoch: 8	Train Loss: 0.027448	Train PER: 19.93	Val Loss: 0.031912	Val PER: 23.28%
+[2018-12-03 18:49:04,773] Epoch: 9	Train Loss: 0.026804	Train PER: 19.59	Val Loss: 0.029647	Val PER: 21.43%
+[2018-12-03 18:49:04,774] Lowest validation error achieved. Saving the model.
+[2018-12-03 19:02:39,686] Epoch: 10	Train Loss: 0.026629	Train PER: 19.43	Val Loss: 0.031930	Val PER: 22.03%
+[2018-12-03 19:16:26,201] Epoch: 11	Train Loss: 0.025847	Train PER: 19.01	Val Loss: 0.030402	Val PER: 21.54%
+[2018-12-03 19:30:23,148] Epoch: 12	Train Loss: 0.025719	Train PER: 18.84	Val Loss: 0.031208	Val PER: 22.11%
+[2018-12-03 19:44:34,381] Epoch: 13	Train Loss: 0.025230	Train PER: 18.51	Val Loss: 0.030695	Val PER: 21.74%
+[2018-12-03 19:59:07,531] Epoch: 14	Train Loss: 0.025001	Train PER: 18.45	Val Loss: 0.030314	Val PER: 21.96%
+[2018-12-03 20:13:45,859] Epoch: 15	Train Loss: 0.024506	Train PER: 18.02	Val Loss: 0.031182	Val PER: 22.15%
+[2018-12-03 20:14:26,444] Test PER: 22.09%
+[2018-12-03 20:14:26,445] Sweep Count: 16
+[2018-12-03 20:14:26,445] Config:
+ l2_regularizer: 3.80801205759e-05
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.277691043781
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_16
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 4.39347722938e-05
+ mode: train
+
+[2018-12-03 20:14:26,459] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 20:14:26,459] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:14:26,459] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 20:14:26,459] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:14:26,460] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 20:14:26,460] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:14:26,460] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 20:14:26,460] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:14:26,460] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 20:14:26,460] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:14:26,460] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 20:14:26,464] Initializing bias Linear.bias with zeros.
+[2018-12-03 20:14:26,464] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 20:14:26,475] Initializing bias Linear.bias with zeros.
+[2018-12-03 20:14:26,475] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 20:14:26,476] Initializing bias Linear.bias with zeros.
+[2018-12-03 20:14:26,479] Commencing training
+[2018-12-03 20:17:02,147] Epoch: 1	Train Loss: 0.050644	Train PER: 34.65	Val Loss: 0.040812	Val PER: 29.47%
+[2018-12-03 20:17:02,147] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:19:36,700] Epoch: 2	Train Loss: 0.038880	Train PER: 28.14	Val Loss: 0.037752	Val PER: 28.05%
+[2018-12-03 20:19:36,700] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:22:11,865] Epoch: 3	Train Loss: 0.035644	Train PER: 25.97	Val Loss: 0.036001	Val PER: 26.76%
+[2018-12-03 20:22:11,865] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:24:47,815] Epoch: 4	Train Loss: 0.033464	Train PER: 24.57	Val Loss: 0.034548	Val PER: 25.85%
+[2018-12-03 20:24:47,816] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:27:24,928] Epoch: 5	Train Loss: 0.031754	Train PER: 23.26	Val Loss: 0.034355	Val PER: 25.95%
+[2018-12-03 20:29:59,322] Epoch: 6	Train Loss: 0.030310	Train PER: 22.36	Val Loss: 0.033447	Val PER: 25.43%
+[2018-12-03 20:29:59,324] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:32:35,193] Epoch: 7	Train Loss: 0.029044	Train PER: 21.45	Val Loss: 0.033544	Val PER: 25.19%
+[2018-12-03 20:32:35,193] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:35:11,099] Epoch: 8	Train Loss: 0.027759	Train PER: 20.34	Val Loss: 0.033274	Val PER: 24.64%
+[2018-12-03 20:35:11,099] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:37:47,008] Epoch: 9	Train Loss: 0.026620	Train PER: 19.55	Val Loss: 0.032438	Val PER: 24.42%
+[2018-12-03 20:37:47,008] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:40:23,122] Epoch: 10	Train Loss: 0.025481	Train PER: 18.86	Val Loss: 0.032956	Val PER: 24.56%
+[2018-12-03 20:43:00,490] Epoch: 11	Train Loss: 0.024443	Train PER: 17.97	Val Loss: 0.032678	Val PER: 24.26%
+[2018-12-03 20:43:00,491] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:45:36,514] Epoch: 12	Train Loss: 0.023274	Train PER: 17.12	Val Loss: 0.032993	Val PER: 23.74%
+[2018-12-03 20:45:36,515] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:48:14,477] Epoch: 13	Train Loss: 0.022149	Train PER: 16.21	Val Loss: 0.033271	Val PER: 24.06%
+[2018-12-03 20:50:50,796] Epoch: 14	Train Loss: 0.020985	Train PER: 15.35	Val Loss: 0.033640	Val PER: 24.68%
+[2018-12-03 20:53:28,456] Epoch: 15	Train Loss: 0.019769	Train PER: 14.44	Val Loss: 0.034102	Val PER: 24.42%
+[2018-12-03 20:53:49,988] Test PER: 24.94%
+[2018-12-03 20:53:49,988] Sweep Count: 17
+[2018-12-03 20:53:49,989] Config:
+ l2_regularizer: 3.20003425172e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.1051861012
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_17
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000157979902993
+ mode: train
+
+[2018-12-03 20:53:50,002] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 20:53:50,002] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:53:50,003] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 20:53:50,003] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:53:50,003] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 20:53:50,003] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:53:50,003] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 20:53:50,003] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:53:50,003] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 20:53:50,003] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 20:53:50,003] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 20:53:50,007] Initializing bias Linear.bias with zeros.
+[2018-12-03 20:53:50,007] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 20:53:50,018] Initializing bias Linear.bias with zeros.
+[2018-12-03 20:53:50,018] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 20:53:50,019] Initializing bias Linear.bias with zeros.
+[2018-12-03 20:53:50,022] Commencing training
+[2018-12-03 20:56:23,968] Epoch: 1	Train Loss: 0.048944	Train PER: 34.63	Val Loss: 0.038866	Val PER: 28.62%
+[2018-12-03 20:56:23,969] Lowest validation error achieved. Saving the model.
+[2018-12-03 20:58:58,926] Epoch: 2	Train Loss: 0.035682	Train PER: 26.22	Val Loss: 0.034079	Val PER: 25.27%
+[2018-12-03 20:58:58,927] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:01:33,455] Epoch: 3	Train Loss: 0.031453	Train PER: 23.14	Val Loss: 0.032538	Val PER: 24.35%
+[2018-12-03 21:01:33,455] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:04:08,610] Epoch: 4	Train Loss: 0.028454	Train PER: 20.89	Val Loss: 0.032548	Val PER: 24.21%
+[2018-12-03 21:04:08,610] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:06:44,031] Epoch: 5	Train Loss: 0.025815	Train PER: 19.23	Val Loss: 0.031175	Val PER: 23.01%
+[2018-12-03 21:06:44,032] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:09:20,692] Epoch: 6	Train Loss: 0.023161	Train PER: 17.15	Val Loss: 0.031218	Val PER: 23.04%
+[2018-12-03 21:11:56,300] Epoch: 7	Train Loss: 0.020329	Train PER: 15.13	Val Loss: 0.032629	Val PER: 22.94%
+[2018-12-03 21:11:56,300] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:14:32,559] Epoch: 8	Train Loss: 0.017335	Train PER: 13.00	Val Loss: 0.034248	Val PER: 23.59%
+[2018-12-03 21:17:08,779] Epoch: 9	Train Loss: 0.014390	Train PER: 10.82	Val Loss: 0.036622	Val PER: 24.08%
+[2018-12-03 21:19:44,693] Epoch: 10	Train Loss: 0.011405	Train PER: 8.41	Val Loss: 0.039908	Val PER: 24.09%
+[2018-12-03 21:22:21,949] Epoch: 11	Train Loss: 0.008908	Train PER: 6.48	Val Loss: 0.044379	Val PER: 24.36%
+[2018-12-03 21:24:59,804] Epoch: 12	Train Loss: 0.006770	Train PER: 4.80	Val Loss: 0.048903	Val PER: 25.10%
+[2018-12-03 21:27:37,099] Epoch: 13	Train Loss: 0.005257	Train PER: 3.73	Val Loss: 0.055728	Val PER: 25.03%
+[2018-12-03 21:30:15,260] Epoch: 14	Train Loss: 0.004283	Train PER: 2.99	Val Loss: 0.060047	Val PER: 25.02%
+[2018-12-03 21:32:53,365] Epoch: 15	Train Loss: 0.003756	Train PER: 2.64	Val Loss: 0.061611	Val PER: 24.98%
+[2018-12-03 21:33:14,356] Test PER: 24.94%
+[2018-12-03 21:33:14,357] Sweep Count: 18
+[2018-12-03 21:33:14,357] Config:
+ l2_regularizer: 3.65592145224e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.240609940817
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_18
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 1.78974591749e-06
+ mode: train
+
+[2018-12-03 21:33:14,371] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 21:33:14,371] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 21:33:14,371] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 21:33:14,371] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 21:33:14,371] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 21:33:14,371] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 21:33:14,371] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 21:33:14,372] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 21:33:14,372] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 21:33:14,372] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 21:33:14,372] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 21:33:14,375] Initializing bias Linear.bias with zeros.
+[2018-12-03 21:33:14,376] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 21:33:14,386] Initializing bias Linear.bias with zeros.
+[2018-12-03 21:33:14,386] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 21:33:14,387] Initializing bias Linear.bias with zeros.
+[2018-12-03 21:33:14,389] Commencing training
+[2018-12-03 21:35:50,142] Epoch: 1	Train Loss: 0.102782	Train PER: 61.12	Val Loss: 0.081214	Val PER: 47.89%
+[2018-12-03 21:35:50,142] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:38:25,656] Epoch: 2	Train Loss: 0.070521	Train PER: 44.52	Val Loss: 0.062547	Val PER: 40.21%
+[2018-12-03 21:38:25,656] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:41:01,960] Epoch: 3	Train Loss: 0.058939	Train PER: 39.53	Val Loss: 0.055769	Val PER: 37.97%
+[2018-12-03 21:41:01,960] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:43:37,319] Epoch: 4	Train Loss: 0.053994	Train PER: 37.38	Val Loss: 0.052345	Val PER: 36.05%
+[2018-12-03 21:43:37,320] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:46:12,401] Epoch: 5	Train Loss: 0.051148	Train PER: 35.86	Val Loss: 0.050325	Val PER: 35.06%
+[2018-12-03 21:46:12,402] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:48:47,810] Epoch: 6	Train Loss: 0.049246	Train PER: 34.71	Val Loss: 0.048940	Val PER: 34.38%
+[2018-12-03 21:48:47,810] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:51:22,967] Epoch: 7	Train Loss: 0.047823	Train PER: 33.92	Val Loss: 0.047724	Val PER: 33.64%
+[2018-12-03 21:51:22,967] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:53:57,958] Epoch: 8	Train Loss: 0.046651	Train PER: 33.20	Val Loss: 0.046719	Val PER: 33.10%
+[2018-12-03 21:53:57,958] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:56:33,068] Epoch: 9	Train Loss: 0.045691	Train PER: 32.56	Val Loss: 0.045947	Val PER: 32.57%
+[2018-12-03 21:56:33,068] Lowest validation error achieved. Saving the model.
+[2018-12-03 21:59:08,037] Epoch: 10	Train Loss: 0.044937	Train PER: 32.12	Val Loss: 0.045210	Val PER: 32.23%
+[2018-12-03 21:59:08,038] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:01:42,397] Epoch: 11	Train Loss: 0.044209	Train PER: 31.59	Val Loss: 0.044597	Val PER: 31.76%
+[2018-12-03 22:01:42,397] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:04:17,111] Epoch: 12	Train Loss: 0.043592	Train PER: 31.21	Val Loss: 0.044187	Val PER: 31.51%
+[2018-12-03 22:04:17,112] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:06:52,679] Epoch: 13	Train Loss: 0.043004	Train PER: 30.76	Val Loss: 0.043710	Val PER: 31.33%
+[2018-12-03 22:06:52,680] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:09:27,827] Epoch: 14	Train Loss: 0.042486	Train PER: 30.45	Val Loss: 0.043229	Val PER: 30.93%
+[2018-12-03 22:09:27,827] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:12:03,828] Epoch: 15	Train Loss: 0.042034	Train PER: 30.14	Val Loss: 0.042846	Val PER: 30.62%
+[2018-12-03 22:12:03,829] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:12:25,822] Test PER: 30.92%
+[2018-12-03 22:12:25,823] Sweep Count: 19
+[2018-12-03 22:12:25,823] Config:
+ l2_regularizer: 1.61861364681e-05
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.378634562501
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_19
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000120047000106
+ mode: train
+
+[2018-12-03 22:12:25,837] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 22:12:25,838] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:12:25,838] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 22:12:25,838] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:12:25,838] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 22:12:25,838] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:12:25,838] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 22:12:25,838] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:12:25,838] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 22:12:25,839] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:12:25,839] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 22:12:25,842] Initializing bias Linear.bias with zeros.
+[2018-12-03 22:12:25,842] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 22:12:25,853] Initializing bias Linear.bias with zeros.
+[2018-12-03 22:12:25,853] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 22:12:25,854] Initializing bias Linear.bias with zeros.
+[2018-12-03 22:12:25,858] Commencing training
+[2018-12-03 22:15:01,124] Epoch: 1	Train Loss: 0.045858	Train PER: 32.54	Val Loss: 0.038684	Val PER: 28.39%
+[2018-12-03 22:15:01,125] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:17:36,792] Epoch: 2	Train Loss: 0.036429	Train PER: 26.78	Val Loss: 0.035135	Val PER: 26.25%
+[2018-12-03 22:17:36,793] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:20:11,392] Epoch: 3	Train Loss: 0.032851	Train PER: 24.12	Val Loss: 0.032813	Val PER: 24.40%
+[2018-12-03 22:20:11,392] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:22:47,339] Epoch: 4	Train Loss: 0.030316	Train PER: 22.22	Val Loss: 0.032047	Val PER: 23.53%
+[2018-12-03 22:22:47,340] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:25:23,231] Epoch: 5	Train Loss: 0.028088	Train PER: 20.85	Val Loss: 0.031781	Val PER: 23.22%
+[2018-12-03 22:25:23,232] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:28:02,960] Epoch: 6	Train Loss: 0.026082	Train PER: 19.38	Val Loss: 0.031423	Val PER: 22.83%
+[2018-12-03 22:28:02,960] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:30:41,744] Epoch: 7	Train Loss: 0.024048	Train PER: 17.92	Val Loss: 0.031615	Val PER: 23.20%
+[2018-12-03 22:33:23,926] Epoch: 8	Train Loss: 0.021973	Train PER: 16.36	Val Loss: 0.032208	Val PER: 23.18%
+[2018-12-03 22:36:08,670] Epoch: 9	Train Loss: 0.019706	Train PER: 14.70	Val Loss: 0.033113	Val PER: 23.17%
+[2018-12-03 22:38:52,056] Epoch: 10	Train Loss: 0.017520	Train PER: 13.16	Val Loss: 0.035110	Val PER: 24.21%
+[2018-12-03 22:41:35,788] Epoch: 11	Train Loss: 0.015115	Train PER: 11.25	Val Loss: 0.035829	Val PER: 23.52%
+[2018-12-03 22:44:18,375] Epoch: 12	Train Loss: 0.012779	Train PER: 9.42	Val Loss: 0.038177	Val PER: 24.00%
+[2018-12-03 22:47:00,608] Epoch: 13	Train Loss: 0.010622	Train PER: 7.78	Val Loss: 0.041937	Val PER: 25.08%
+[2018-12-03 22:49:43,102] Epoch: 14	Train Loss: 0.008667	Train PER: 6.20	Val Loss: 0.045300	Val PER: 24.98%
+[2018-12-03 22:52:28,114] Epoch: 15	Train Loss: 0.007070	Train PER: 5.12	Val Loss: 0.047145	Val PER: 24.28%
+[2018-12-03 22:52:52,851] Test PER: 24.88%
+[2018-12-03 22:52:52,851] Sweep Count: 20
+[2018-12-03 22:52:52,852] Config:
+ l2_regularizer: 4.53739031348e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.339985052672
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_20
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000110466266847
+ mode: train
+
+[2018-12-03 22:52:52,865] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 22:52:52,865] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:52:52,866] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 22:52:52,866] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:52:52,866] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 22:52:52,866] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:52:52,866] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 22:52:52,866] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:52:52,866] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 22:52:52,866] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 22:52:52,866] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 22:52:52,870] Initializing bias Linear.bias with zeros.
+[2018-12-03 22:52:52,870] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 22:52:52,881] Initializing bias Linear.bias with zeros.
+[2018-12-03 22:52:52,881] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 22:52:52,881] Initializing bias Linear.bias with zeros.
+[2018-12-03 22:52:52,885] Commencing training
+[2018-12-03 22:55:26,585] Epoch: 1	Train Loss: 0.048836	Train PER: 34.33	Val Loss: 0.040023	Val PER: 29.11%
+[2018-12-03 22:55:26,586] Lowest validation error achieved. Saving the model.
+[2018-12-03 22:58:00,303] Epoch: 2	Train Loss: 0.036356	Train PER: 26.47	Val Loss: 0.035659	Val PER: 25.58%
+[2018-12-03 22:58:00,304] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:00:33,801] Epoch: 3	Train Loss: 0.032299	Train PER: 23.73	Val Loss: 0.032903	Val PER: 24.24%
+[2018-12-03 23:00:33,802] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:03:07,549] Epoch: 4	Train Loss: 0.029640	Train PER: 21.83	Val Loss: 0.031465	Val PER: 23.49%
+[2018-12-03 23:03:07,549] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:05:40,547] Epoch: 5	Train Loss: 0.027536	Train PER: 20.39	Val Loss: 0.031136	Val PER: 23.22%
+[2018-12-03 23:05:40,547] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:08:14,978] Epoch: 6	Train Loss: 0.025649	Train PER: 19.04	Val Loss: 0.030381	Val PER: 22.60%
+[2018-12-03 23:08:14,978] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:10:48,916] Epoch: 7	Train Loss: 0.023684	Train PER: 17.55	Val Loss: 0.030150	Val PER: 22.29%
+[2018-12-03 23:10:48,916] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:13:23,221] Epoch: 8	Train Loss: 0.021752	Train PER: 16.08	Val Loss: 0.031498	Val PER: 22.53%
+[2018-12-03 23:15:56,206] Epoch: 9	Train Loss: 0.019841	Train PER: 14.68	Val Loss: 0.031698	Val PER: 22.82%
+[2018-12-03 23:18:29,300] Epoch: 10	Train Loss: 0.017786	Train PER: 13.15	Val Loss: 0.033705	Val PER: 23.36%
+[2018-12-03 23:21:03,682] Epoch: 11	Train Loss: 0.015511	Train PER: 11.42	Val Loss: 0.034119	Val PER: 23.02%
+[2018-12-03 23:23:38,635] Epoch: 12	Train Loss: 0.013340	Train PER: 9.74	Val Loss: 0.036555	Val PER: 23.63%
+[2018-12-03 23:26:12,533] Epoch: 13	Train Loss: 0.011259	Train PER: 8.12	Val Loss: 0.038886	Val PER: 23.86%
+[2018-12-03 23:28:46,009] Epoch: 14	Train Loss: 0.009273	Train PER: 6.53	Val Loss: 0.042942	Val PER: 23.92%
+[2018-12-03 23:31:19,268] Epoch: 15	Train Loss: 0.007447	Train PER: 5.15	Val Loss: 0.045239	Val PER: 23.65%
+[2018-12-03 23:31:40,348] Test PER: 23.91%
+[2018-12-03 23:31:40,349] Sweep Count: 21
+[2018-12-03 23:31:40,349] Config:
+ l2_regularizer: 0.000186601880052
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.0802582535697
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_21
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00625800961308
+ mode: train
+
+[2018-12-03 23:31:40,363] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 23:31:40,363] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 23:31:40,363] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 23:31:40,363] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 23:31:40,364] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-03 23:31:40,364] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 23:31:40,364] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 23:31:40,364] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 23:31:40,364] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-03 23:31:40,364] Initializing bias Conv2d.bias with zeros.
+[2018-12-03 23:31:40,364] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-03 23:31:40,368] Initializing bias Linear.bias with zeros.
+[2018-12-03 23:31:40,368] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-03 23:31:40,379] Initializing bias Linear.bias with zeros.
+[2018-12-03 23:31:40,379] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-03 23:31:40,380] Initializing bias Linear.bias with zeros.
+[2018-12-03 23:31:40,382] Commencing training
+[2018-12-03 23:38:50,361] Epoch: 1	Train Loss: 0.045011	Train PER: 31.93	Val Loss: 0.041833	Val PER: 29.99%
+[2018-12-03 23:38:50,362] Lowest validation error achieved. Saving the model.
+[2018-12-03 23:52:47,749] Epoch: 2	Train Loss: 0.037817	Train PER: 26.93	Val Loss: 0.036633	Val PER: 27.39%
+[2018-12-03 23:52:47,750] Lowest validation error achieved. Saving the model.
+[2018-12-04 00:07:05,091] Epoch: 3	Train Loss: 0.036039	Train PER: 25.78	Val Loss: 0.037317	Val PER: 27.20%
+[2018-12-04 00:07:05,091] Lowest validation error achieved. Saving the model.
+[2018-12-04 00:21:18,387] Epoch: 4	Train Loss: 0.035068	Train PER: 25.13	Val Loss: 0.035232	Val PER: 25.88%
+[2018-12-04 00:21:18,387] Lowest validation error achieved. Saving the model.
+[2018-12-04 00:34:51,287] Epoch: 5	Train Loss: 0.034566	Train PER: 24.91	Val Loss: 0.034358	Val PER: 24.76%
+[2018-12-04 00:34:51,287] Lowest validation error achieved. Saving the model.
+[2018-12-04 00:47:56,296] Epoch: 6	Train Loss: 0.034261	Train PER: 24.41	Val Loss: 0.034868	Val PER: 25.21%
+[2018-12-04 01:00:40,737] Epoch: 7	Train Loss: 0.033987	Train PER: 24.50	Val Loss: 0.035360	Val PER: 24.52%
+[2018-12-04 01:00:40,738] Lowest validation error achieved. Saving the model.
+[2018-12-04 01:13:10,281] Epoch: 8	Train Loss: 0.033877	Train PER: 24.22	Val Loss: 0.035425	Val PER: 26.03%
+[2018-12-04 01:25:30,177] Epoch: 9	Train Loss: 0.033678	Train PER: 24.08	Val Loss: 0.034229	Val PER: 24.72%
+[2018-12-04 01:37:41,210] Epoch: 10	Train Loss: 0.033566	Train PER: 24.14	Val Loss: 0.032788	Val PER: 24.05%
+[2018-12-04 01:37:41,211] Lowest validation error achieved. Saving the model.
+[2018-12-04 01:49:43,515] Epoch: 11	Train Loss: 0.033346	Train PER: 24.05	Val Loss: 0.035784	Val PER: 25.33%
+[2018-12-04 02:01:53,201] Epoch: 12	Train Loss: 0.033326	Train PER: 23.82	Val Loss: 0.033468	Val PER: 24.31%
+[2018-12-04 02:13:55,694] Epoch: 13	Train Loss: 0.033225	Train PER: 23.78	Val Loss: 0.032715	Val PER: 23.69%
+[2018-12-04 02:13:55,694] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:26:18,040] Epoch: 14	Train Loss: 0.033080	Train PER: 23.61	Val Loss: 0.034686	Val PER: 24.75%
+[2018-12-04 02:38:36,120] Epoch: 15	Train Loss: 0.032955	Train PER: 23.57	Val Loss: 0.033357	Val PER: 23.81%
+[2018-12-04 02:39:15,232] Test PER: 24.17%
+[2018-12-04 02:39:15,232] Sweep Count: 22
+[2018-12-04 02:39:15,232] Config:
+ l2_regularizer: 2.99201989709e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.171715314186
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_22
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 1.38456369406e-05
+ mode: train
+
+[2018-12-04 02:39:15,246] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 02:39:15,247] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 02:39:15,247] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 02:39:15,247] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 02:39:15,247] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 02:39:15,247] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 02:39:15,247] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 02:39:15,247] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 02:39:15,247] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 02:39:15,247] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 02:39:15,247] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 02:39:15,251] Initializing bias Linear.bias with zeros.
+[2018-12-04 02:39:15,251] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 02:39:15,262] Initializing bias Linear.bias with zeros.
+[2018-12-04 02:39:15,262] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 02:39:15,263] Initializing bias Linear.bias with zeros.
+[2018-12-04 02:39:15,268] Commencing training
+[2018-12-04 02:41:50,988] Epoch: 1	Train Loss: 0.059571	Train PER: 39.63	Val Loss: 0.047215	Val PER: 33.18%
+[2018-12-04 02:41:50,988] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:44:24,384] Epoch: 2	Train Loss: 0.043807	Train PER: 30.99	Val Loss: 0.043265	Val PER: 31.03%
+[2018-12-04 02:44:24,384] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:46:59,996] Epoch: 3	Train Loss: 0.040285	Train PER: 28.83	Val Loss: 0.040804	Val PER: 29.39%
+[2018-12-04 02:46:59,997] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:49:34,964] Epoch: 4	Train Loss: 0.038160	Train PER: 27.32	Val Loss: 0.038731	Val PER: 28.11%
+[2018-12-04 02:49:34,965] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:52:10,408] Epoch: 5	Train Loss: 0.036500	Train PER: 26.30	Val Loss: 0.037797	Val PER: 27.21%
+[2018-12-04 02:52:10,408] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:54:45,207] Epoch: 6	Train Loss: 0.035185	Train PER: 25.20	Val Loss: 0.036984	Val PER: 26.90%
+[2018-12-04 02:54:45,208] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:57:20,917] Epoch: 7	Train Loss: 0.034145	Train PER: 24.63	Val Loss: 0.036998	Val PER: 26.88%
+[2018-12-04 02:57:20,917] Lowest validation error achieved. Saving the model.
+[2018-12-04 02:59:55,270] Epoch: 8	Train Loss: 0.033159	Train PER: 23.98	Val Loss: 0.035927	Val PER: 26.32%
+[2018-12-04 02:59:55,270] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:02:30,498] Epoch: 9	Train Loss: 0.032343	Train PER: 23.36	Val Loss: 0.035181	Val PER: 25.83%
+[2018-12-04 03:02:30,499] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:05:05,683] Epoch: 10	Train Loss: 0.031581	Train PER: 22.83	Val Loss: 0.035084	Val PER: 25.35%
+[2018-12-04 03:05:05,684] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:07:40,551] Epoch: 11	Train Loss: 0.030852	Train PER: 22.46	Val Loss: 0.035017	Val PER: 25.68%
+[2018-12-04 03:10:16,198] Epoch: 12	Train Loss: 0.030186	Train PER: 21.75	Val Loss: 0.034965	Val PER: 26.10%
+[2018-12-04 03:12:52,664] Epoch: 13	Train Loss: 0.029607	Train PER: 21.21	Val Loss: 0.034026	Val PER: 24.42%
+[2018-12-04 03:12:52,664] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:15:27,918] Epoch: 14	Train Loss: 0.028944	Train PER: 20.99	Val Loss: 0.033986	Val PER: 24.46%
+[2018-12-04 03:18:02,620] Epoch: 15	Train Loss: 0.028388	Train PER: 20.60	Val Loss: 0.033721	Val PER: 24.58%
+[2018-12-04 03:18:23,650] Test PER: 24.69%
+[2018-12-04 03:18:23,651] Sweep Count: 23
+[2018-12-04 03:18:23,651] Config:
+ l2_regularizer: 0.000392687784014
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.00357200365575
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_23
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 1.07046592325e-05
+ mode: train
+
+[2018-12-04 03:18:23,665] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 03:18:23,665] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:18:23,665] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 03:18:23,665] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:18:23,665] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 03:18:23,665] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:18:23,666] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 03:18:23,666] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:18:23,666] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 03:18:23,666] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:18:23,666] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 03:18:23,669] Initializing bias Linear.bias with zeros.
+[2018-12-04 03:18:23,670] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 03:18:23,680] Initializing bias Linear.bias with zeros.
+[2018-12-04 03:18:23,680] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 03:18:23,681] Initializing bias Linear.bias with zeros.
+[2018-12-04 03:18:23,683] Commencing training
+[2018-12-04 03:20:59,486] Epoch: 1	Train Loss: 0.060956	Train PER: 40.80	Val Loss: 0.048194	Val PER: 33.89%
+[2018-12-04 03:20:59,487] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:23:34,750] Epoch: 2	Train Loss: 0.045660	Train PER: 32.40	Val Loss: 0.043599	Val PER: 31.09%
+[2018-12-04 03:23:34,751] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:26:10,674] Epoch: 3	Train Loss: 0.042297	Train PER: 30.41	Val Loss: 0.041448	Val PER: 30.02%
+[2018-12-04 03:26:10,674] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:28:45,941] Epoch: 4	Train Loss: 0.040253	Train PER: 29.07	Val Loss: 0.039811	Val PER: 28.87%
+[2018-12-04 03:28:45,941] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:31:22,150] Epoch: 5	Train Loss: 0.038720	Train PER: 28.03	Val Loss: 0.038896	Val PER: 28.28%
+[2018-12-04 03:31:22,151] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:33:58,276] Epoch: 6	Train Loss: 0.037565	Train PER: 27.15	Val Loss: 0.037964	Val PER: 27.77%
+[2018-12-04 03:33:58,276] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:36:35,840] Epoch: 7	Train Loss: 0.036642	Train PER: 26.62	Val Loss: 0.037114	Val PER: 27.19%
+[2018-12-04 03:36:35,841] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:39:12,044] Epoch: 8	Train Loss: 0.035814	Train PER: 25.95	Val Loss: 0.036347	Val PER: 26.79%
+[2018-12-04 03:39:12,044] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:41:49,058] Epoch: 9	Train Loss: 0.035068	Train PER: 25.56	Val Loss: 0.036123	Val PER: 26.61%
+[2018-12-04 03:41:49,058] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:44:25,724] Epoch: 10	Train Loss: 0.034391	Train PER: 25.14	Val Loss: 0.035556	Val PER: 26.22%
+[2018-12-04 03:44:25,724] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:47:01,339] Epoch: 11	Train Loss: 0.033800	Train PER: 24.57	Val Loss: 0.035663	Val PER: 26.77%
+[2018-12-04 03:49:37,388] Epoch: 12	Train Loss: 0.033266	Train PER: 24.36	Val Loss: 0.035188	Val PER: 26.11%
+[2018-12-04 03:49:37,389] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:52:12,692] Epoch: 13	Train Loss: 0.032736	Train PER: 23.88	Val Loss: 0.034695	Val PER: 25.76%
+[2018-12-04 03:52:12,693] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:54:48,398] Epoch: 14	Train Loss: 0.032226	Train PER: 23.57	Val Loss: 0.034241	Val PER: 25.18%
+[2018-12-04 03:54:48,399] Lowest validation error achieved. Saving the model.
+[2018-12-04 03:57:24,965] Epoch: 15	Train Loss: 0.031795	Train PER: 23.21	Val Loss: 0.034209	Val PER: 25.52%
+[2018-12-04 03:57:46,700] Test PER: 25.91%
+[2018-12-04 03:57:46,701] Sweep Count: 24
+[2018-12-04 03:57:46,701] Config:
+ l2_regularizer: 0.000108872930656
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.242327148494
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_24
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000628137030696
+ mode: train
+
+[2018-12-04 03:57:46,715] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 03:57:46,715] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:57:46,715] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 03:57:46,716] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:57:46,716] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 03:57:46,716] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:57:46,716] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 03:57:46,716] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:57:46,716] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 03:57:46,716] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 03:57:46,716] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 03:57:46,720] Initializing bias Linear.bias with zeros.
+[2018-12-04 03:57:46,720] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 03:57:46,731] Initializing bias Linear.bias with zeros.
+[2018-12-04 03:57:46,731] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 03:57:46,732] Initializing bias Linear.bias with zeros.
+[2018-12-04 03:57:46,736] Commencing training
+[2018-12-04 04:00:27,416] Epoch: 1	Train Loss: 0.040690	Train PER: 29.26	Val Loss: 0.033767	Val PER: 24.71%
+[2018-12-04 04:00:27,416] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:03:46,560] Epoch: 2	Train Loss: 0.032257	Train PER: 23.67	Val Loss: 0.032975	Val PER: 24.49%
+[2018-12-04 04:03:46,560] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:09:12,010] Epoch: 3	Train Loss: 0.029355	Train PER: 21.67	Val Loss: 0.031541	Val PER: 23.30%
+[2018-12-04 04:09:12,010] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:16:51,155] Epoch: 4	Train Loss: 0.027423	Train PER: 20.25	Val Loss: 0.029753	Val PER: 22.19%
+[2018-12-04 04:16:51,155] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:25:54,232] Epoch: 5	Train Loss: 0.025810	Train PER: 19.26	Val Loss: 0.029520	Val PER: 21.44%
+[2018-12-04 04:25:54,233] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:35:55,327] Epoch: 6	Train Loss: 0.024575	Train PER: 18.31	Val Loss: 0.028041	Val PER: 20.93%
+[2018-12-04 04:35:55,328] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:45:53,276] Epoch: 7	Train Loss: 0.023360	Train PER: 17.47	Val Loss: 0.028291	Val PER: 20.90%
+[2018-12-04 04:45:53,277] Lowest validation error achieved. Saving the model.
+[2018-12-04 04:55:53,433] Epoch: 8	Train Loss: 0.022292	Train PER: 16.86	Val Loss: 0.028469	Val PER: 21.09%
+[2018-12-04 05:06:04,794] Epoch: 9	Train Loss: 0.021234	Train PER: 16.07	Val Loss: 0.028633	Val PER: 20.73%
+[2018-12-04 05:06:04,794] Lowest validation error achieved. Saving the model.
+[2018-12-04 05:16:00,243] Epoch: 10	Train Loss: 0.020111	Train PER: 15.38	Val Loss: 0.028669	Val PER: 20.49%
+[2018-12-04 05:16:00,243] Lowest validation error achieved. Saving the model.
+[2018-12-04 05:25:59,543] Epoch: 11	Train Loss: 0.019119	Train PER: 14.55	Val Loss: 0.029321	Val PER: 20.93%
+[2018-12-04 05:35:39,577] Epoch: 12	Train Loss: 0.017977	Train PER: 13.69	Val Loss: 0.030544	Val PER: 20.94%
+[2018-12-04 05:45:24,129] Epoch: 13	Train Loss: 0.017108	Train PER: 13.17	Val Loss: 0.030955	Val PER: 20.69%
+[2018-12-04 05:55:19,074] Epoch: 14	Train Loss: 0.016190	Train PER: 12.53	Val Loss: 0.032706	Val PER: 21.31%
+[2018-12-04 06:05:04,435] Epoch: 15	Train Loss: 0.015150	Train PER: 11.74	Val Loss: 0.031905	Val PER: 21.37%
+[2018-12-04 06:05:47,221] Test PER: 21.63%
+[2018-12-04 06:05:47,221] Sweep Count: 25
+[2018-12-04 06:05:47,222] Config:
+ l2_regularizer: 1.3974204752e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.125959287975
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_25
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00166074804211
+ mode: train
+
+[2018-12-04 06:05:47,235] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 06:05:47,236] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 06:05:47,236] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 06:05:47,236] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 06:05:47,236] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 06:05:47,236] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 06:05:47,236] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 06:05:47,236] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 06:05:47,236] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 06:05:47,236] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 06:05:47,236] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 06:05:47,240] Initializing bias Linear.bias with zeros.
+[2018-12-04 06:05:47,240] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 06:05:47,251] Initializing bias Linear.bias with zeros.
+[2018-12-04 06:05:47,251] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 06:05:47,252] Initializing bias Linear.bias with zeros.
+[2018-12-04 06:05:47,257] Commencing training
+[2018-12-04 06:08:34,673] Epoch: 1	Train Loss: 0.042008	Train PER: 30.03	Val Loss: 0.034582	Val PER: 25.10%
+[2018-12-04 06:08:34,674] Lowest validation error achieved. Saving the model.
+[2018-12-04 06:11:26,466] Epoch: 2	Train Loss: 0.032621	Train PER: 23.78	Val Loss: 0.032010	Val PER: 23.32%
+[2018-12-04 06:11:26,466] Lowest validation error achieved. Saving the model.
+[2018-12-04 06:14:38,997] Epoch: 3	Train Loss: 0.029385	Train PER: 21.54	Val Loss: 0.029812	Val PER: 22.28%
+[2018-12-04 06:14:38,998] Lowest validation error achieved. Saving the model.
+[2018-12-04 06:19:23,330] Epoch: 4	Train Loss: 0.027073	Train PER: 19.97	Val Loss: 0.030057	Val PER: 21.68%
+[2018-12-04 06:19:23,331] Lowest validation error achieved. Saving the model.
+[2018-12-04 06:27:53,515] Epoch: 5	Train Loss: 0.025303	Train PER: 18.75	Val Loss: 0.030190	Val PER: 21.76%
+[2018-12-04 06:37:35,927] Epoch: 6	Train Loss: 0.023588	Train PER: 17.56	Val Loss: 0.028783	Val PER: 20.79%
+[2018-12-04 06:37:35,928] Lowest validation error achieved. Saving the model.
+[2018-12-04 06:46:50,003] Epoch: 7	Train Loss: 0.022051	Train PER: 16.57	Val Loss: 0.031357	Val PER: 21.02%
+[2018-12-04 06:55:59,188] Epoch: 8	Train Loss: 0.020517	Train PER: 15.57	Val Loss: 0.031146	Val PER: 20.82%
+[2018-12-04 07:05:07,129] Epoch: 9	Train Loss: 0.018903	Train PER: 14.44	Val Loss: 0.031543	Val PER: 20.79%
+[2018-12-04 07:14:29,741] Epoch: 10	Train Loss: 0.017508	Train PER: 13.47	Val Loss: 0.032911	Val PER: 21.53%
+[2018-12-04 07:23:50,039] Epoch: 11	Train Loss: 0.016058	Train PER: 12.36	Val Loss: 0.033077	Val PER: 21.56%
+[2018-12-04 07:32:56,167] Epoch: 12	Train Loss: 0.014681	Train PER: 11.33	Val Loss: 0.035915	Val PER: 21.28%
+[2018-12-04 07:42:00,382] Epoch: 13	Train Loss: 0.013751	Train PER: 10.53	Val Loss: 0.040873	Val PER: 21.89%
+[2018-12-04 07:51:22,643] Epoch: 14	Train Loss: 0.012512	Train PER: 9.71	Val Loss: 0.043586	Val PER: 22.24%
+[2018-12-04 08:00:53,858] Epoch: 15	Train Loss: 0.011835	Train PER: 9.07	Val Loss: 0.043581	Val PER: 21.55%
+[2018-12-04 08:01:21,354] Test PER: 22.08%
+[2018-12-04 08:01:21,355] Sweep Count: 26
+[2018-12-04 08:01:21,355] Config:
+ l2_regularizer: 5.46749762521e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.393945147723
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_26
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 4.92414531459e-06
+ mode: train
+
+[2018-12-04 08:01:21,370] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 08:01:21,370] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:01:21,370] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 08:01:21,370] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:01:21,370] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 08:01:21,370] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:01:21,370] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 08:01:21,370] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:01:21,371] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 08:01:21,371] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:01:21,371] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 08:01:21,374] Initializing bias Linear.bias with zeros.
+[2018-12-04 08:01:21,374] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 08:01:21,385] Initializing bias Linear.bias with zeros.
+[2018-12-04 08:01:21,386] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 08:01:21,386] Initializing bias Linear.bias with zeros.
+[2018-12-04 08:01:21,391] Commencing training
+[2018-12-04 08:04:14,791] Epoch: 1	Train Loss: 0.092150	Train PER: 58.17	Val Loss: 0.072878	Val PER: 49.08%
+[2018-12-04 08:04:14,792] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:07:07,786] Epoch: 2	Train Loss: 0.068445	Train PER: 46.62	Val Loss: 0.064965	Val PER: 44.83%
+[2018-12-04 08:07:07,786] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:10:00,941] Epoch: 3	Train Loss: 0.062678	Train PER: 43.13	Val Loss: 0.060565	Val PER: 41.47%
+[2018-12-04 08:10:00,941] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:12:54,648] Epoch: 4	Train Loss: 0.058668	Train PER: 40.40	Val Loss: 0.057251	Val PER: 39.68%
+[2018-12-04 08:12:54,649] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:15:47,992] Epoch: 5	Train Loss: 0.055552	Train PER: 38.29	Val Loss: 0.054706	Val PER: 37.77%
+[2018-12-04 08:15:47,992] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:18:40,447] Epoch: 6	Train Loss: 0.053001	Train PER: 36.67	Val Loss: 0.052632	Val PER: 36.52%
+[2018-12-04 08:18:40,447] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:21:30,783] Epoch: 7	Train Loss: 0.050816	Train PER: 35.42	Val Loss: 0.050929	Val PER: 35.28%
+[2018-12-04 08:21:30,783] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:24:24,886] Epoch: 8	Train Loss: 0.048972	Train PER: 34.17	Val Loss: 0.049308	Val PER: 34.75%
+[2018-12-04 08:24:24,887] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:27:17,289] Epoch: 9	Train Loss: 0.047509	Train PER: 33.37	Val Loss: 0.048292	Val PER: 33.77%
+[2018-12-04 08:27:17,289] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:30:10,441] Epoch: 10	Train Loss: 0.046260	Train PER: 32.56	Val Loss: 0.047044	Val PER: 33.11%
+[2018-12-04 08:30:10,441] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:33:03,294] Epoch: 11	Train Loss: 0.045166	Train PER: 31.83	Val Loss: 0.046234	Val PER: 32.70%
+[2018-12-04 08:33:03,294] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:35:55,988] Epoch: 12	Train Loss: 0.044200	Train PER: 31.26	Val Loss: 0.045414	Val PER: 31.97%
+[2018-12-04 08:35:55,988] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:38:49,450] Epoch: 13	Train Loss: 0.043297	Train PER: 30.61	Val Loss: 0.044797	Val PER: 31.92%
+[2018-12-04 08:38:49,450] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:41:41,693] Epoch: 14	Train Loss: 0.042474	Train PER: 30.13	Val Loss: 0.044177	Val PER: 31.48%
+[2018-12-04 08:41:41,693] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:44:34,934] Epoch: 15	Train Loss: 0.041718	Train PER: 29.62	Val Loss: 0.043392	Val PER: 30.98%
+[2018-12-04 08:44:34,935] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:44:55,820] Test PER: 30.59%
+[2018-12-04 08:44:55,820] Sweep Count: 27
+[2018-12-04 08:44:55,821] Config:
+ l2_regularizer: 0.000190517304966
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.254582356088
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_27
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000224454421692
+ mode: train
+
+[2018-12-04 08:44:55,837] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 08:44:55,837] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:44:55,837] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 08:44:55,837] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:44:55,837] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 08:44:55,837] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:44:55,837] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 08:44:55,837] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:44:55,838] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 08:44:55,838] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 08:44:55,838] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 08:44:55,841] Initializing bias Linear.bias with zeros.
+[2018-12-04 08:44:55,841] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 08:44:55,852] Initializing bias Linear.bias with zeros.
+[2018-12-04 08:44:55,853] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 08:44:55,853] Initializing bias Linear.bias with zeros.
+[2018-12-04 08:44:55,858] Commencing training
+[2018-12-04 08:47:30,408] Epoch: 1	Train Loss: 0.042574	Train PER: 30.63	Val Loss: 0.035057	Val PER: 25.81%
+[2018-12-04 08:47:30,409] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:50:08,588] Epoch: 2	Train Loss: 0.033106	Train PER: 24.26	Val Loss: 0.032792	Val PER: 24.32%
+[2018-12-04 08:50:08,589] Lowest validation error achieved. Saving the model.
+[2018-12-04 08:53:09,651] Epoch: 3	Train Loss: 0.029956	Train PER: 22.21	Val Loss: 0.032309	Val PER: 24.37%
+[2018-12-04 08:57:06,769] Epoch: 4	Train Loss: 0.027856	Train PER: 20.54	Val Loss: 0.031048	Val PER: 23.01%
+[2018-12-04 08:57:06,769] Lowest validation error achieved. Saving the model.
+[2018-12-04 09:01:13,789] Epoch: 5	Train Loss: 0.026197	Train PER: 19.40	Val Loss: 0.030040	Val PER: 22.41%
+[2018-12-04 09:01:13,789] Lowest validation error achieved. Saving the model.
+[2018-12-04 09:05:34,993] Epoch: 6	Train Loss: 0.024560	Train PER: 18.33	Val Loss: 0.029475	Val PER: 21.74%
+[2018-12-04 09:05:34,993] Lowest validation error achieved. Saving the model.
+[2018-12-04 09:10:14,222] Epoch: 7	Train Loss: 0.022930	Train PER: 17.23	Val Loss: 0.029861	Val PER: 21.85%
+[2018-12-04 09:14:54,801] Epoch: 8	Train Loss: 0.021394	Train PER: 16.13	Val Loss: 0.030543	Val PER: 22.06%
+[2018-12-04 09:19:36,577] Epoch: 9	Train Loss: 0.019683	Train PER: 14.81	Val Loss: 0.031167	Val PER: 22.47%
+[2018-12-04 09:24:22,844] Epoch: 10	Train Loss: 0.017917	Train PER: 13.57	Val Loss: 0.033009	Val PER: 22.26%
+[2018-12-04 09:29:13,333] Epoch: 11	Train Loss: 0.016200	Train PER: 12.28	Val Loss: 0.032769	Val PER: 22.43%
+[2018-12-04 09:34:02,771] Epoch: 12	Train Loss: 0.014568	Train PER: 11.07	Val Loss: 0.035121	Val PER: 23.03%
+[2018-12-04 09:38:43,804] Epoch: 13	Train Loss: 0.012807	Train PER: 9.73	Val Loss: 0.036518	Val PER: 23.11%
+[2018-12-04 09:43:25,696] Epoch: 14	Train Loss: 0.011169	Train PER: 8.49	Val Loss: 0.039670	Val PER: 23.45%
+[2018-12-04 09:48:03,666] Epoch: 15	Train Loss: 0.009939	Train PER: 7.48	Val Loss: 0.041186	Val PER: 24.02%
+[2018-12-04 09:48:36,160] Test PER: 24.36%
+[2018-12-04 09:48:36,160] Sweep Count: 28
+[2018-12-04 09:48:36,160] Config:
+ l2_regularizer: 3.42266412173e-07
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.260505085025
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_28
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.00180753713837
+ mode: train
+
+[2018-12-04 09:48:36,174] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 09:48:36,174] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 09:48:36,175] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 09:48:36,175] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 09:48:36,175] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 09:48:36,175] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 09:48:36,175] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 09:48:36,175] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 09:48:36,175] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 09:48:36,175] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 09:48:36,175] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 09:48:36,179] Initializing bias Linear.bias with zeros.
+[2018-12-04 09:48:36,179] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 09:48:36,190] Initializing bias Linear.bias with zeros.
+[2018-12-04 09:48:36,190] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 09:48:36,190] Initializing bias Linear.bias with zeros.
+[2018-12-04 09:48:36,193] Commencing training
+[2018-12-04 09:51:38,727] Epoch: 1	Train Loss: 0.041590	Train PER: 29.76	Val Loss: 0.036451	Val PER: 26.37%
+[2018-12-04 09:51:38,728] Lowest validation error achieved. Saving the model.
+[2018-12-04 09:54:47,126] Epoch: 2	Train Loss: 0.032999	Train PER: 24.07	Val Loss: 0.031885	Val PER: 23.43%
+[2018-12-04 09:54:47,126] Lowest validation error achieved. Saving the model.
+[2018-12-04 09:58:01,880] Epoch: 3	Train Loss: 0.029779	Train PER: 21.62	Val Loss: 0.030038	Val PER: 22.46%
+[2018-12-04 09:58:01,880] Lowest validation error achieved. Saving the model.
+[2018-12-04 10:01:55,422] Epoch: 4	Train Loss: 0.027764	Train PER: 20.48	Val Loss: 0.029528	Val PER: 21.77%
+[2018-12-04 10:01:55,422] Lowest validation error achieved. Saving the model.
+[2018-12-04 10:08:16,204] Epoch: 5	Train Loss: 0.026119	Train PER: 19.37	Val Loss: 0.030152	Val PER: 21.88%
+[2018-12-04 10:17:57,509] Epoch: 6	Train Loss: 0.024542	Train PER: 18.29	Val Loss: 0.029204	Val PER: 21.25%
+[2018-12-04 10:17:57,509] Lowest validation error achieved. Saving the model.
+[2018-12-04 10:28:21,442] Epoch: 7	Train Loss: 0.023065	Train PER: 17.29	Val Loss: 0.030407	Val PER: 21.99%
+[2018-12-04 10:38:45,353] Epoch: 8	Train Loss: 0.021655	Train PER: 16.41	Val Loss: 0.029617	Val PER: 20.88%
+[2018-12-04 10:38:45,354] Lowest validation error achieved. Saving the model.
+[2018-12-04 10:49:06,623] Epoch: 9	Train Loss: 0.020181	Train PER: 15.55	Val Loss: 0.030214	Val PER: 21.16%
+[2018-12-04 10:59:26,361] Epoch: 10	Train Loss: 0.018881	Train PER: 14.46	Val Loss: 0.033491	Val PER: 21.66%
+[2018-12-04 11:09:49,162] Epoch: 11	Train Loss: 0.017325	Train PER: 13.27	Val Loss: 0.035124	Val PER: 21.98%
+[2018-12-04 11:20:25,240] Epoch: 12	Train Loss: 0.016138	Train PER: 12.51	Val Loss: 0.037943	Val PER: 22.31%
+[2018-12-04 11:31:22,890] Epoch: 13	Train Loss: 0.014959	Train PER: 11.51	Val Loss: 0.037316	Val PER: 21.87%
+[2018-12-04 11:42:37,759] Epoch: 14	Train Loss: 0.013895	Train PER: 10.71	Val Loss: 0.042624	Val PER: 21.95%
+[2018-12-04 11:54:03,389] Epoch: 15	Train Loss: 0.012889	Train PER: 9.89	Val Loss: 0.046653	Val PER: 23.05%
+[2018-12-04 11:54:28,627] Test PER: 23.04%
+[2018-12-04 11:54:28,628] Sweep Count: 29
+[2018-12-04 11:54:28,628] Config:
+ l2_regularizer: 1.40159608696e-06
+ data_type: logfbank_40
+ num_workers: 4
+ dropout: 0.290230266229
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921/s_29
+ num_classes: 17
+ model_arch: cnn_5_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 1
+ log_dir: /home/seahyinghang8/cs221-project/phoneme_cnn/expt/2018-12-02-1921
+ num_dimensions: 40
+ config: constrained_cnn_5
+ learning_rate: 0.000519652561372
+ mode: train
+
+[2018-12-04 11:54:28,644] Initializing weight Conv2d(1, 3, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 11:54:28,644] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 11:54:28,644] Initializing weight Conv2d(3, 5, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 11:54:28,644] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 11:54:28,644] Initializing weight Conv2d(5, 7, kernel_size=(5, 3), stride=(1, 1), padding=(2, 2)) using He initialization.
+[2018-12-04 11:54:28,644] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 11:54:28,644] Initializing weight Conv2d(7, 5, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 11:54:28,645] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 11:54:28,645] Initializing weight Conv2d(5, 3, kernel_size=(5, 3), stride=(1, 1), padding=(1, 1)) using He initialization.
+[2018-12-04 11:54:28,645] Initializing bias Conv2d.bias with zeros.
+[2018-12-04 11:54:28,645] Initializing weight Linear(in_features=324, out_features=1024, bias=True) using He initialization.
+[2018-12-04 11:54:28,648] Initializing bias Linear.bias with zeros.
+[2018-12-04 11:54:28,648] Initializing weight Linear(in_features=1024, out_features=1024, bias=True) using He initialization.
+[2018-12-04 11:54:28,659] Initializing bias Linear.bias with zeros.
+[2018-12-04 11:54:28,659] Initializing weight Linear(in_features=1024, out_features=17, bias=True) using He initialization.
+[2018-12-04 11:54:28,660] Initializing bias Linear.bias with zeros.
+[2018-12-04 11:54:28,666] Commencing training
+[2018-12-04 11:57:05,874] Epoch: 1	Train Loss: 0.040763	Train PER: 29.40	Val Loss: 0.034369	Val PER: 25.34%
+[2018-12-04 11:57:05,874] Lowest validation error achieved. Saving the model.
+[2018-12-04 11:59:40,983] Epoch: 2	Train Loss: 0.032181	Train PER: 23.43	Val Loss: 0.032382	Val PER: 24.02%
+[2018-12-04 11:59:40,984] Lowest validation error achieved. Saving the model.
+[2018-12-04 12:02:17,811] Epoch: 3	Train Loss: 0.028942	Train PER: 21.23	Val Loss: 0.031018	Val PER: 22.98%
+[2018-12-04 12:02:17,812] Lowest validation error achieved. Saving the model.
+[2018-12-04 12:04:55,686] Epoch: 4	Train Loss: 0.026207	Train PER: 19.54	Val Loss: 0.030204	Val PER: 21.98%
+[2018-12-04 12:04:55,686] Lowest validation error achieved. Saving the model.
+[2018-12-04 12:07:46,478] Epoch: 5	Train Loss: 0.023525	Train PER: 17.72	Val Loss: 0.030846	Val PER: 22.13%
+[2018-12-04 12:10:49,773] Epoch: 6	Train Loss: 0.020809	Train PER: 15.79	Val Loss: 0.031976	Val PER: 22.55%
+[2018-12-04 12:13:55,470] Epoch: 7	Train Loss: 0.017973	Train PER: 13.73	Val Loss: 0.033190	Val PER: 21.92%
+[2018-12-04 12:13:55,471] Lowest validation error achieved. Saving the model.
+[2018-12-04 12:17:07,618] Epoch: 8	Train Loss: 0.015001	Train PER: 11.48	Val Loss: 0.036266	Val PER: 22.37%
+[2018-12-04 12:20:21,560] Epoch: 9	Train Loss: 0.012395	Train PER: 9.63	Val Loss: 0.041034	Val PER: 22.74%
+[2018-12-04 12:23:38,407] Epoch: 10	Train Loss: 0.010080	Train PER: 7.67	Val Loss: 0.045636	Val PER: 23.90%
+[2018-12-04 12:26:58,735] Epoch: 11	Train Loss: 0.008551	Train PER: 6.53	Val Loss: 0.048924	Val PER: 23.76%
+[2018-12-04 12:30:20,512] Epoch: 12	Train Loss: 0.007107	Train PER: 5.27	Val Loss: 0.054859	Val PER: 23.69%
+[2018-12-04 12:33:45,223] Epoch: 13	Train Loss: 0.006328	Train PER: 4.72	Val Loss: 0.059269	Val PER: 23.27%
+[2018-12-04 12:37:14,551] Epoch: 14	Train Loss: 0.005604	Train PER: 4.14	Val Loss: 0.062588	Val PER: 23.44%
+[2018-12-04 12:40:51,299] Epoch: 15	Train Loss: 0.004983	Train PER: 3.62	Val Loss: 0.065420	Val PER: 24.13%
+[2018-12-04 12:41:13,182] Test PER: 24.36%
