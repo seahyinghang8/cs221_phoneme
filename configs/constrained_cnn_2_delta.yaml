@@ -3,7 +3,7 @@ phn_idx_map_filename: phn_index_map_constrained.yaml
 num_sweeps: 30
 
 model_arch: cnn_2_layer
-data_type: mfcc
+data_type: logfbank_40-delta
 
 epochs: 15
 dropout:

@@ -63,7 +63,7 @@ All the experiments that we ran to obtain our results are recorded in `expts/`. 
 
 To make it easier to extract information from the log, run the following:
 
-``` python utils/log_to_csv.py -f <path_to_log_file>```
+``` python utils/log_to_csv.py --file <path_to_log_file>```
 
 This will extract the important information of the sweeps into a `sweeps.csv` file in the experiment directory where the log is stored.
 
@@ -73,7 +73,7 @@ To evaluate the performance of the model on the testing set, run the following c
 
 ``` python eval.py --config <config_filename> --load <path_to_model> ```
 
-Evaluation will also automatically plot the confusion matrix at the end for error analysis.
+Besides returning the test error, evaluation will also automatically plot the confusion matrix at the end for error analysis.
 
 
 ### Running the Demo
