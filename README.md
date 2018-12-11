@@ -26,7 +26,7 @@ To start the preprocessing code to perform feature extraction, run:
 
 Since we normalize the input before passing it into the model, we can calculate the mean and std for each feature by running the following:
 
-``` python utils/computer_mean_std.py --type <mfcc/mfcc-delta/logfbank_40/logfbank_40-delta> ```
+``` python utils/compute_mean_std.py --type <mfcc/mfcc-delta/logfbank_40/logfbank_40-delta> ```
 
 The type can be any of the feature type listed in the command.
 
