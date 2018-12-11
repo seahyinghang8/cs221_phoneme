@@ -45,12 +45,12 @@ Our models are stored in the directory `models`. All the training configs are st
 Config Name                   | Description
 ----------------------------- | ---------------------------------------------------------------------------------------------
 constrained.yaml              | Constrained experiment with fixed hyperparameters for 2 layer CNN that gives best results
-constrained_lr.yaml           | Constrained experiment with a range of hyperparamers with Linear Regression using logfbank
-constrained_cnn_2.yaml        | Constrained experiment with a range of hyperparamers with 2 layer CNN using logfbank
-constrained_cnn_5.yaml        | Constrained experiment with a range of hyperparamers with 5 layer CNN using logfbank
-constrained_cnn_10.yaml       | Constrained experiment with a range of hyperparamers with 10 layer CNN using logfbank
-constrained_cnn_2_mfcc.yaml   | Constrained experiment with a range of hyperparamers with 2 layer CNN using mfcc
-constrained_cnn_2_delta.yaml  | Constrained experiment with a range of hyperparamers with 2 layer CNN using logfbank + delta
+constrained_lr.yaml           | Constrained experiment with a range of hyperparameters with Linear Regression using logfbank
+constrained_cnn_2.yaml        | Constrained experiment with a range of hyperparameters with 2 layer CNN using logfbank
+constrained_cnn_5.yaml        | Constrained experiment with a range of hyperparameters with 5 layer CNN using logfbank
+constrained_cnn_10.yaml       | Constrained experiment with a range of hyperparameters with 10 layer CNN using logfbank
+constrained_cnn_2_mfcc.yaml   | Constrained experiment with a range of hyperparameters with 2 layer CNN using mfcc
+constrained_cnn_2_delta.yaml  | Constrained experiment with a range of hyperparameters with 2 layer CNN using logfbank + delta
 
 To train our model, run the following:
 
@@ -63,7 +63,7 @@ All the experiments that we ran to obtain our results are recorded in `expts/`. 
 
 To make it easier to extract information from the log, run the following:
 
-``` python utils/log_to_csv.py ```
+``` python utils/log_to_csv.py -f <path_to_log_file>```
 
 This will extract the important information of the sweeps into a `sweeps.csv` file in the experiment directory where the log is stored.
 
