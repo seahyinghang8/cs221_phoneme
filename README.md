@@ -38,6 +38,12 @@ To visualize the extracted features to have a sense of the data, you can run the
 
 This will save a plot of 12 examples for each phoneme into a folder in the root directory `<mfcc/mfcc-delta/logfbank_40/logfbank_40-delta>-features-plot/`.
 
+You can also run the following to plot a 2D reduction of the feature space:
+
+``` python utils/feature_2d_visualization.py --type <mfcc/mfcc-delta/logfbank_40/logfbank_40-delta> ```
+
+This will save plots in the root directory `<mfcc/mfcc-delta/logfbank_40/logfbank_40-delta>-features-2d-plot/`.
+
 ### Training the Model
 
 Our models are stored in the directory `models`. All the training configs are stored in the directory `configs/`. Here is a table of the configs and their respective descriptions.

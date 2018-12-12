@@ -78,8 +78,8 @@ def main():
         plot_values[:, -1] = [math.exp(output[i]) for phn, i in cfg.phn_idx_map.items()]
         os.system('clear')
         classes = {phn: math.exp(output[i]) for phn, i in cfg.phn_idx_map.items()}
-        for cls, val in classes.items():
-          print(cls, val)
+        for cls in cfg.phn_idx_map:
+          print(cls, classes[cls])
         print(max([(val, phn) for phn, val in classes.items()]))
 
         axarr[0].cla()
