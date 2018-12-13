@@ -2,6 +2,7 @@
 /data
 /timit
 /*-features-plot
+/*-features-2d-plot
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
