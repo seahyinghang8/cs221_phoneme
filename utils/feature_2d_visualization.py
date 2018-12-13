@@ -73,12 +73,12 @@ def main():
     print "Plotting features"
     plt.scatter(proj[:, 0], proj[:, 1], s=1, c=group_colors, cmap='gist_rainbow')
     c = plt.colorbar()
-    plt.savefig(os.path.join(feature_type_dir, "{}-pca-phn".format(args.type)), dpi=100)
+    plt.savefig(os.path.join(feature_type_dir, "{}-pca-grp".format(args.type)), dpi=100)
 
     c.remove()
     plt.scatter(proj[:, 0], proj[:, 1], s=1, c=phoneme_colors, cmap='gist_rainbow')
     c = plt.colorbar()
-    plt.savefig(os.path.join(feature_type_dir, "{}-pca-grp".format(args.type)), dpi=100)
+    plt.savefig(os.path.join(feature_type_dir, "{}-pca-phn".format(args.type)), dpi=100)
 
 if __name__ == '__main__':
     main()
