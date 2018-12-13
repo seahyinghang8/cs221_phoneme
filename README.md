@@ -10,11 +10,11 @@ You must first install all the requirement packages. Create a virtualenv (option
 Since different OS will need different versions of pytorch, please install pytorch and torchvision as according to the instructions on pytorch's main page.
 
 ### Dataset
-In this project, we are using Timit dataset. The dataset should be placed in the project root directory under the folder name 'timit'.
-In our submission, we provided a small subset of the dataset that is available to the public from NLTK.
+In this project, we are using the TIMIT dataset. The dataset should be placed in the project root directory under the folder name 'timit'.
+In our submission, we provided a small subset of the dataset that is available to the public from NLTK; it can be swapped out with the full dataset for reproducing our results.
 
 ### Data Preprocessing
-We will first preprocess the data to extract the features. The voice clip will be chopped into individual phonemes based on the \*.phn file. We will then apply mfcc / logfbank and deltas to each voice clip.
+We first preprocess the data to extract the features. The voice clip is chopped into individual phonemes based on the \*.phn file. We then apply mfcc / logfbank and deltas to each voice clip.
 
 For the preprocessing code to work, you must first install 'sox' by running the following:
 
@@ -30,7 +30,7 @@ Since we normalize the input before passing it into the model, we can calculate 
 
 The type can be any of the feature type listed in the command.
 
-In our implementation of the dataloader, we map each phoneme's english label to an integer label using a mapping located in the folder phn_index_maps/. As we constrained our problem by reducing the set of phonemes for classification, our experiments will be running based on `phn_index_map_constrained.yaml`. phn_index_maps/process_index.py is used to create these yaml mapping files from the `phn_index_maps/raw_map.yaml`.
+In our implementation of the dataloader, we map each phoneme's phonetic label to an integer label using a mapping located in the folder phn_index_maps/. As we constrained our problem by reducing the set of phonemes for classification, our experiments will be running based on `phn_index_map_constrained.yaml`. phn_index_maps/process_index.py is used to create these yaml mapping files from the `phn_index_maps/raw_map.yaml`.
 
 To visualize the extracted features to have a sense of the data, you can run the following:
 
@@ -80,7 +80,6 @@ To evaluate the performance of the model on the testing set, run the following c
 ``` python eval.py --config <config_filename> --load <path_to_model> ```
 
 Besides returning the test error, evaluation will also automatically plot the confusion matrix at the end for error analysis.
-
 
 ### Running the Demo
 
