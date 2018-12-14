@@ -4,7 +4,7 @@ import os
 import argparse
 import torch
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pickle
 import numpy as np
