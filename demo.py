@@ -3,6 +3,7 @@ from __future__ import print_function
 import pyaudio
 import numpy as np
 import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from python_speech_features import logfbank
 from configs.config_parser import parse

@@ -17,7 +17,8 @@ def setup_logging(args):
         os.mkdir(EXPT_DIR)
     datetime_stamp = datetime.datetime.now().strftime(STR_TIME_FORMAT)
     args.log_dir = os.path.join(EXPT_DIR, datetime_stamp)
-    os.mkdir(args.log_dir)
+    if not os.path.exists(args.log_dir):
+        os.mkdir(args.log_dir)
 
     info_logfile = os.path.join(args.log_dir, 'log.INFO') 
     debug_logfile = os.path.join(args.log_dir, 'log.DEBUG')

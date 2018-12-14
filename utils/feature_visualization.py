@@ -3,6 +3,8 @@ import yaml
 import os
 import argparse
 import torch
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 from dataloader import PhonemeDataset

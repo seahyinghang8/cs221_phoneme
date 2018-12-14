@@ -4,6 +4,8 @@ import yaml
 
 import itertools
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 

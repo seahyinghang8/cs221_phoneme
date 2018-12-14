@@ -1,0 +1,337 @@
+[2018-12-13 17:43:07,790] Initialized a PhonemeDataset of size 1704.
+[2018-12-13 17:43:08,055] Initialized a PhonemeDataset of size 1659.
+[2018-12-13 17:43:08,056] Cmd: python train.py --config constrained_cnn_2_delta
+[2018-12-13 17:43:08,056] Running experiment <constrained_cnn_2_delta> in train mode.
+[2018-12-13 17:43:08,056] Sweep Count: 0
+[2018-12-13 17:43:08,056] Config:
+ l2_regularizer: 0.00840685512986
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.246084829327
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_0
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.0203389321607
+
+[2018-12-13 17:43:08,074] Commencing training
+[2018-12-13 17:43:09,955] Epoch: 1	Train Loss: 0.100112	Train PER: 59.49	Val Loss: 0.074990	Val PER: 48.63%
+[2018-12-13 17:43:09,955] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:11,296] Epoch: 2	Train Loss: 0.069731	Train PER: 47.41	Val Loss: 0.069140	Val PER: 46.27%
+[2018-12-13 17:43:11,297] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:12,691] Epoch: 3	Train Loss: 0.064654	Train PER: 43.13	Val Loss: 0.067905	Val PER: 42.35%
+[2018-12-13 17:43:12,700] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:14,033] Epoch: 4	Train Loss: 0.059916	Train PER: 40.37	Val Loss: 0.074051	Val PER: 50.20%
+[2018-12-13 17:43:15,333] Epoch: 5	Train Loss: 0.058430	Train PER: 39.20	Val Loss: 0.103909	Val PER: 60.78%
+[2018-12-13 17:43:16,643] Epoch: 6	Train Loss: 0.060322	Train PER: 40.30	Val Loss: 0.054973	Val PER: 34.90%
+[2018-12-13 17:43:16,644] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:17,917] Epoch: 7	Train Loss: 0.056009	Train PER: 37.41	Val Loss: 0.064710	Val PER: 39.22%
+[2018-12-13 17:43:19,199] Epoch: 8	Train Loss: 0.053471	Train PER: 34.99	Val Loss: 0.053169	Val PER: 38.43%
+[2018-12-13 17:43:20,532] Epoch: 9	Train Loss: 0.053352	Train PER: 36.16	Val Loss: 0.053320	Val PER: 35.69%
+[2018-12-13 17:43:21,855] Epoch: 10	Train Loss: 0.051615	Train PER: 33.47	Val Loss: 0.064594	Val PER: 41.96%
+[2018-12-13 17:43:23,173] Epoch: 11	Train Loss: 0.051564	Train PER: 34.37	Val Loss: 0.050962	Val PER: 35.69%
+[2018-12-13 17:43:24,514] Epoch: 12	Train Loss: 0.051781	Train PER: 34.58	Val Loss: 0.057490	Val PER: 36.86%
+[2018-12-13 17:43:25,872] Epoch: 13	Train Loss: 0.049840	Train PER: 32.57	Val Loss: 0.063585	Val PER: 43.53%
+[2018-12-13 17:43:27,204] Epoch: 14	Train Loss: 0.051867	Train PER: 34.58	Val Loss: 0.077256	Val PER: 49.41%
+[2018-12-13 17:43:28,543] Epoch: 15	Train Loss: 0.050373	Train PER: 34.92	Val Loss: 0.055630	Val PER: 37.25%
+[2018-12-13 17:43:30,005] Test PER: 48.04%
+[2018-12-13 17:43:30,006] Sweep Count: 1
+[2018-12-13 17:43:30,006] Config:
+ l2_regularizer: 2.74334150112e-06
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.0977600482453
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_1
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.0523053850331
+
+[2018-12-13 17:43:30,011] Commencing training
+[2018-12-13 17:43:31,339] Epoch: 1	Train Loss: 0.229342	Train PER: 87.92	Val Loss: 0.135664	Val PER: 87.84%
+[2018-12-13 17:43:31,339] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:32,684] Epoch: 2	Train Loss: 0.133835	Train PER: 84.61	Val Loss: 0.135309	Val PER: 85.49%
+[2018-12-13 17:43:32,684] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:34,127] Epoch: 3	Train Loss: 0.133561	Train PER: 85.09	Val Loss: 0.136537	Val PER: 87.84%
+[2018-12-13 17:43:35,671] Epoch: 4	Train Loss: 0.133633	Train PER: 85.99	Val Loss: 0.136661	Val PER: 87.84%
+[2018-12-13 17:43:37,065] Epoch: 5	Train Loss: 0.133829	Train PER: 85.09	Val Loss: 0.136120	Val PER: 87.45%
+[2018-12-13 17:43:38,452] Epoch: 6	Train Loss: 0.134057	Train PER: 85.23	Val Loss: 0.136401	Val PER: 87.84%
+[2018-12-13 17:43:39,834] Epoch: 7	Train Loss: 0.135005	Train PER: 85.58	Val Loss: 0.136903	Val PER: 87.84%
+[2018-12-13 17:43:41,371] Epoch: 8	Train Loss: 0.133771	Train PER: 85.09	Val Loss: 0.136116	Val PER: 87.84%
+[2018-12-13 17:43:42,967] Epoch: 9	Train Loss: 0.134010	Train PER: 85.23	Val Loss: 0.137141	Val PER: 87.84%
+[2018-12-13 17:43:44,445] Epoch: 10	Train Loss: 0.133776	Train PER: 85.09	Val Loss: 0.136877	Val PER: 87.84%
+[2018-12-13 17:43:45,888] Epoch: 11	Train Loss: 0.134103	Train PER: 85.30	Val Loss: 0.161949	Val PER: 94.51%
+[2018-12-13 17:43:47,268] Epoch: 12	Train Loss: 0.236826	Train PER: 89.72	Val Loss: 0.137333	Val PER: 87.84%
+[2018-12-13 17:43:48,644] Epoch: 13	Train Loss: 0.146091	Train PER: 86.27	Val Loss: 0.137132	Val PER: 87.84%
+[2018-12-13 17:43:50,092] Epoch: 14	Train Loss: 0.150920	Train PER: 85.37	Val Loss: 0.137016	Val PER: 87.84%
+[2018-12-13 17:43:51,675] Epoch: 15	Train Loss: 0.215392	Train PER: 86.68	Val Loss: 0.136994	Val PER: 87.84%
+[2018-12-13 17:43:53,471] Test PER: 86.08%
+[2018-12-13 17:43:53,471] Sweep Count: 2
+[2018-12-13 17:43:53,471] Config:
+ l2_regularizer: 7.00008979443e-05
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.265752906776
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_2
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.0553446771918
+
+[2018-12-13 17:43:53,477] Commencing training
+[2018-12-13 17:43:55,002] Epoch: 1	Train Loss: 0.139885	Train PER: 68.39	Val Loss: 0.086449	Val PER: 58.04%
+[2018-12-13 17:43:55,002] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:56,487] Epoch: 2	Train Loss: 0.082524	Train PER: 53.49	Val Loss: 0.078774	Val PER: 46.67%
+[2018-12-13 17:43:56,488] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:43:58,340] Epoch: 3	Train Loss: 0.070411	Train PER: 43.55	Val Loss: 0.074588	Val PER: 48.24%
+[2018-12-13 17:44:00,031] Epoch: 4	Train Loss: 0.064672	Train PER: 43.89	Val Loss: 0.060006	Val PER: 43.14%
+[2018-12-13 17:44:00,032] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:01,526] Epoch: 5	Train Loss: 0.058078	Train PER: 39.89	Val Loss: 0.056208	Val PER: 37.65%
+[2018-12-13 17:44:01,527] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:03,230] Epoch: 6	Train Loss: 0.054955	Train PER: 37.06	Val Loss: 0.064470	Val PER: 43.53%
+[2018-12-13 17:44:04,819] Epoch: 7	Train Loss: 0.063737	Train PER: 40.23	Val Loss: 0.058315	Val PER: 39.61%
+[2018-12-13 17:44:06,236] Epoch: 8	Train Loss: 0.052012	Train PER: 35.06	Val Loss: 0.058274	Val PER: 37.25%
+[2018-12-13 17:44:06,236] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:07,734] Epoch: 9	Train Loss: 0.047568	Train PER: 32.99	Val Loss: 0.051324	Val PER: 34.12%
+[2018-12-13 17:44:07,735] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:09,271] Epoch: 10	Train Loss: 0.056108	Train PER: 35.61	Val Loss: 0.064918	Val PER: 38.04%
+[2018-12-13 17:44:11,097] Epoch: 11	Train Loss: 0.052983	Train PER: 35.47	Val Loss: 0.052158	Val PER: 37.25%
+[2018-12-13 17:44:12,623] Epoch: 12	Train Loss: 0.056517	Train PER: 36.65	Val Loss: 0.069886	Val PER: 39.61%
+[2018-12-13 17:44:14,252] Epoch: 13	Train Loss: 0.072130	Train PER: 42.79	Val Loss: 0.063639	Val PER: 43.53%
+[2018-12-13 17:44:16,209] Epoch: 14	Train Loss: 0.065740	Train PER: 40.17	Val Loss: 0.121282	Val PER: 54.12%
+[2018-12-13 17:44:17,902] Epoch: 15	Train Loss: 0.110891	Train PER: 64.11	Val Loss: 0.089949	Val PER: 60.00%
+[2018-12-13 17:44:19,731] Test PER: 59.13%
+[2018-12-13 17:44:19,731] Sweep Count: 3
+[2018-12-13 17:44:19,731] Config:
+ l2_regularizer: 0.00689603656227
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.282751566322
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_3
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.000163694517077
+
+[2018-12-13 17:44:19,736] Commencing training
+[2018-12-13 17:44:21,065] Epoch: 1	Train Loss: 0.114397	Train PER: 68.12	Val Loss: 0.101670	Val PER: 58.43%
+[2018-12-13 17:44:21,065] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:22,453] Epoch: 2	Train Loss: 0.085260	Train PER: 50.93	Val Loss: 0.084136	Val PER: 51.37%
+[2018-12-13 17:44:22,453] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:23,780] Epoch: 3	Train Loss: 0.070176	Train PER: 43.75	Val Loss: 0.074348	Val PER: 47.06%
+[2018-12-13 17:44:23,780] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:25,150] Epoch: 4	Train Loss: 0.060470	Train PER: 37.13	Val Loss: 0.068296	Val PER: 41.96%
+[2018-12-13 17:44:25,150] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:26,745] Epoch: 5	Train Loss: 0.052272	Train PER: 32.92	Val Loss: 0.065376	Val PER: 41.96%
+[2018-12-13 17:44:28,227] Epoch: 6	Train Loss: 0.047302	Train PER: 29.47	Val Loss: 0.061995	Val PER: 41.57%
+[2018-12-13 17:44:28,227] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:29,856] Epoch: 7	Train Loss: 0.043547	Train PER: 27.47	Val Loss: 0.059511	Val PER: 36.86%
+[2018-12-13 17:44:29,856] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:31,359] Epoch: 8	Train Loss: 0.039819	Train PER: 24.02	Val Loss: 0.058927	Val PER: 38.43%
+[2018-12-13 17:44:32,885] Epoch: 9	Train Loss: 0.035938	Train PER: 21.19	Val Loss: 0.057086	Val PER: 38.82%
+[2018-12-13 17:44:34,526] Epoch: 10	Train Loss: 0.032858	Train PER: 18.29	Val Loss: 0.057255	Val PER: 38.82%
+[2018-12-13 17:44:36,177] Epoch: 11	Train Loss: 0.031039	Train PER: 17.18	Val Loss: 0.055920	Val PER: 38.82%
+[2018-12-13 17:44:38,040] Epoch: 12	Train Loss: 0.028754	Train PER: 15.67	Val Loss: 0.055464	Val PER: 36.86%
+[2018-12-13 17:44:39,619] Epoch: 13	Train Loss: 0.026650	Train PER: 13.94	Val Loss: 0.055740	Val PER: 39.22%
+[2018-12-13 17:44:41,202] Epoch: 14	Train Loss: 0.024524	Train PER: 12.08	Val Loss: 0.055169	Val PER: 38.04%
+[2018-12-13 17:44:43,088] Epoch: 15	Train Loss: 0.022554	Train PER: 10.77	Val Loss: 0.054263	Val PER: 37.25%
+[2018-12-13 17:44:45,467] Test PER: 43.52%
+[2018-12-13 17:44:45,468] Sweep Count: 4
+[2018-12-13 17:44:45,468] Config:
+ l2_regularizer: 0.000399801835506
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.214718244486
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_4
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.000545065143326
+
+[2018-12-13 17:44:45,476] Commencing training
+[2018-12-13 17:44:47,375] Epoch: 1	Train Loss: 0.106772	Train PER: 65.22	Val Loss: 0.084540	Val PER: 50.59%
+[2018-12-13 17:44:47,375] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:49,014] Epoch: 2	Train Loss: 0.066508	Train PER: 43.13	Val Loss: 0.066478	Val PER: 41.18%
+[2018-12-13 17:44:49,014] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:50,849] Epoch: 3	Train Loss: 0.048410	Train PER: 31.06	Val Loss: 0.059556	Val PER: 36.47%
+[2018-12-13 17:44:50,849] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:52,536] Epoch: 4	Train Loss: 0.036680	Train PER: 22.91	Val Loss: 0.056978	Val PER: 38.82%
+[2018-12-13 17:44:54,232] Epoch: 5	Train Loss: 0.028482	Train PER: 16.91	Val Loss: 0.053473	Val PER: 34.90%
+[2018-12-13 17:44:54,232] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:44:55,948] Epoch: 6	Train Loss: 0.021537	Train PER: 11.18	Val Loss: 0.058606	Val PER: 36.47%
+[2018-12-13 17:44:57,555] Epoch: 7	Train Loss: 0.016185	Train PER: 7.66	Val Loss: 0.055908	Val PER: 36.08%
+[2018-12-13 17:44:58,932] Epoch: 8	Train Loss: 0.011634	Train PER: 4.35	Val Loss: 0.056083	Val PER: 34.90%
+[2018-12-13 17:45:00,407] Epoch: 9	Train Loss: 0.008292	Train PER: 1.86	Val Loss: 0.059010	Val PER: 38.43%
+[2018-12-13 17:45:02,102] Epoch: 10	Train Loss: 0.006054	Train PER: 0.69	Val Loss: 0.059948	Val PER: 36.08%
+[2018-12-13 17:45:03,619] Epoch: 11	Train Loss: 0.004340	Train PER: 0.21	Val Loss: 0.061283	Val PER: 37.25%
+[2018-12-13 17:45:05,507] Epoch: 12	Train Loss: 0.003310	Train PER: 0.00	Val Loss: 0.060805	Val PER: 36.47%
+[2018-12-13 17:45:07,452] Epoch: 13	Train Loss: 0.002576	Train PER: 0.07	Val Loss: 0.062344	Val PER: 36.08%
+[2018-12-13 17:45:09,134] Epoch: 14	Train Loss: 0.002332	Train PER: 0.07	Val Loss: 0.064931	Val PER: 36.08%
+[2018-12-13 17:45:10,866] Epoch: 15	Train Loss: 0.001717	Train PER: 0.00	Val Loss: 0.065818	Val PER: 36.86%
+[2018-12-13 17:45:12,571] Test PER: 49.19%
+[2018-12-13 17:45:12,578] Sweep Count: 5
+[2018-12-13 17:45:12,578] Config:
+ l2_regularizer: 7.12387496621e-05
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.105849988719
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_5
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.0107740808593
+
+[2018-12-13 17:45:12,588] Commencing training
+[2018-12-13 17:45:14,988] Epoch: 1	Train Loss: 0.096457	Train PER: 54.38	Val Loss: 0.055292	Val PER: 35.29%
+[2018-12-13 17:45:14,994] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:17,143] Epoch: 2	Train Loss: 0.043022	Train PER: 28.43	Val Loss: 0.048567	Val PER: 31.76%
+[2018-12-13 17:45:17,143] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:19,216] Epoch: 3	Train Loss: 0.038436	Train PER: 24.50	Val Loss: 0.050066	Val PER: 37.25%
+[2018-12-13 17:45:20,703] Epoch: 4	Train Loss: 0.024739	Train PER: 18.56	Val Loss: 0.050053	Val PER: 30.59%
+[2018-12-13 17:45:20,703] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:22,251] Epoch: 5	Train Loss: 0.020786	Train PER: 14.22	Val Loss: 0.070727	Val PER: 37.65%
+[2018-12-13 17:45:23,676] Epoch: 6	Train Loss: 0.015883	Train PER: 9.73	Val Loss: 0.070594	Val PER: 29.41%
+[2018-12-13 17:45:23,676] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:25,224] Epoch: 7	Train Loss: 0.014567	Train PER: 9.94	Val Loss: 0.083618	Val PER: 35.69%
+[2018-12-13 17:45:26,596] Epoch: 8	Train Loss: 0.011525	Train PER: 7.38	Val Loss: 0.103381	Val PER: 36.47%
+[2018-12-13 17:45:28,015] Epoch: 9	Train Loss: 0.009049	Train PER: 5.94	Val Loss: 0.084062	Val PER: 32.16%
+[2018-12-13 17:45:29,397] Epoch: 10	Train Loss: 0.005642	Train PER: 4.07	Val Loss: 0.116921	Val PER: 36.86%
+[2018-12-13 17:45:30,765] Epoch: 11	Train Loss: 0.012401	Train PER: 7.59	Val Loss: 0.090574	Val PER: 38.04%
+[2018-12-13 17:45:32,468] Epoch: 12	Train Loss: 0.010640	Train PER: 6.42	Val Loss: 0.097449	Val PER: 44.31%
+[2018-12-13 17:45:33,898] Epoch: 13	Train Loss: 0.006005	Train PER: 3.59	Val Loss: 0.088904	Val PER: 34.12%
+[2018-12-13 17:45:35,226] Epoch: 14	Train Loss: 0.003914	Train PER: 2.14	Val Loss: 0.116216	Val PER: 37.25%
+[2018-12-13 17:45:36,648] Epoch: 15	Train Loss: 0.003242	Train PER: 1.79	Val Loss: 0.119140	Val PER: 36.86%
+[2018-12-13 17:45:37,591] Test PER: 54.13%
+[2018-12-13 17:45:37,591] Sweep Count: 6
+[2018-12-13 17:45:37,592] Config:
+ l2_regularizer: 0.000252161503279
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.161746279373
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_6
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.010217419523
+
+[2018-12-13 17:45:37,598] Commencing training
+[2018-12-13 17:45:38,937] Epoch: 1	Train Loss: 0.077772	Train PER: 45.62	Val Loss: 0.060835	Val PER: 46.67%
+[2018-12-13 17:45:38,937] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:40,265] Epoch: 2	Train Loss: 0.046468	Train PER: 32.71	Val Loss: 0.056585	Val PER: 35.69%
+[2018-12-13 17:45:40,266] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:41,593] Epoch: 3	Train Loss: 0.040159	Train PER: 26.71	Val Loss: 0.049678	Val PER: 31.37%
+[2018-12-13 17:45:41,593] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:45:42,977] Epoch: 4	Train Loss: 0.034307	Train PER: 24.15	Val Loss: 0.056188	Val PER: 35.69%
+[2018-12-13 17:45:44,315] Epoch: 5	Train Loss: 0.028190	Train PER: 20.01	Val Loss: 0.063206	Val PER: 38.04%
+[2018-12-13 17:45:45,639] Epoch: 6	Train Loss: 0.028338	Train PER: 19.46	Val Loss: 0.057303	Val PER: 35.29%
+[2018-12-13 17:45:46,964] Epoch: 7	Train Loss: 0.023401	Train PER: 17.25	Val Loss: 0.075420	Val PER: 35.69%
+[2018-12-13 17:45:48,304] Epoch: 8	Train Loss: 0.019580	Train PER: 13.66	Val Loss: 0.081802	Val PER: 38.82%
+[2018-12-13 17:45:49,640] Epoch: 9	Train Loss: 0.020117	Train PER: 14.56	Val Loss: 0.061765	Val PER: 33.73%
+[2018-12-13 17:45:50,973] Epoch: 10	Train Loss: 0.018083	Train PER: 10.70	Val Loss: 0.096500	Val PER: 43.92%
+[2018-12-13 17:45:52,305] Epoch: 11	Train Loss: 0.014056	Train PER: 9.52	Val Loss: 0.093139	Val PER: 38.04%
+[2018-12-13 17:45:53,632] Epoch: 12	Train Loss: 0.011163	Train PER: 7.66	Val Loss: 0.089163	Val PER: 37.65%
+[2018-12-13 17:45:54,959] Epoch: 13	Train Loss: 0.007003	Train PER: 4.14	Val Loss: 0.093337	Val PER: 36.08%
+[2018-12-13 17:45:56,276] Epoch: 14	Train Loss: 0.006073	Train PER: 3.73	Val Loss: 0.127494	Val PER: 44.31%
+[2018-12-13 17:45:57,609] Epoch: 15	Train Loss: 0.009711	Train PER: 5.80	Val Loss: 0.105543	Val PER: 40.39%
+[2018-12-13 17:45:58,568] Test PER: 55.33%
+[2018-12-13 17:45:58,568] Sweep Count: 7
+[2018-12-13 17:45:58,568] Config:
+ l2_regularizer: 2.6685260932e-06
+ data_type: logfbank_40-delta
+ num_workers: 4
+ dropout: 0.299855707993
+ batch_size: 20
+ epochs: 15
+ phn_idx_map: {'aa': 10, 'ix': 1, 'ae': 13, 'eh': 14, 's': 2, 'ao': 10, 'sh': 3, 'ih': 1, 'ux': 9, 'h#': 0, 'n': 15, 'er': 4, 'axr': 4, 'pau': 0, 'eng': 8, 'f': 7, 'm': 16, 'l': 5, 'ng': 8, 'iy': 12, 'r': 4, 'uh': 9, 'ow': 11, 'z': 6}
+ sweep_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743/s_7
+ num_classes: 17
+ model_arch: cnn_2_layer
+ val_split: 0.15
+ num_frames: 10
+ phn_idx_map_filename: phn_index_map_constrained.yaml
+ num_sweeps: 30
+ num_channels: 3
+ log_dir: /Users/levilian/Google_Drive/CS221Fall2018/cs221_phoneme/expts/2018-12-13-1743
+ num_dimensions: 40
+ config: constrained_cnn_2_delta
+ learning_rate: 0.00959442472832
+
+[2018-12-13 17:45:58,574] Commencing training
+[2018-12-13 17:45:59,949] Epoch: 1	Train Loss: 0.085617	Train PER: 47.07	Val Loss: 0.072539	Val PER: 47.84%
+[2018-12-13 17:45:59,950] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:46:01,293] Epoch: 2	Train Loss: 0.044281	Train PER: 29.68	Val Loss: 0.061560	Val PER: 38.04%
+[2018-12-13 17:46:01,294] Lowest validation error achieved. Saving the model.
+[2018-12-13 17:46:02,622] Epoch: 3	Train Loss: 0.034815	Train PER: 24.78	Val Loss: 0.065865	Val PER: 43.92%
+[2018-12-13 17:46:03,952] Epoch: 4	Train Loss: 0.029132	Train PER: 19.60	Val Loss: 0.068644	Val PER: 38.43%
+[2018-12-13 17:46:05,286] Epoch: 5	Train Loss: 0.020519	Train PER: 14.98	Val Loss: 0.067637	Val PER: 38.43%
+[2018-12-13 17:46:06,672] Epoch: 6	Train Loss: 0.013894	Train PER: 10.35	Val Loss: 0.093307	Val PER: 43.53%
