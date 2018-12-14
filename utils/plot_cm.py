@@ -5,7 +5,7 @@ import yaml
 import itertools
 import numpy as np
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
